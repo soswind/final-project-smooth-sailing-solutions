@@ -10,6 +10,22 @@
 }
 
 
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  color: #585858;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+}
+
+
 /* NavbarTop section with image & paragraph text */
 .navtop-img {
   display: flex;
@@ -100,9 +116,151 @@ nav {
 
 
 
+/* Header section with image & paragraph text */
+.header-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #585858;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  padding: 2rem;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.paragraph-header {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #585858;
+  margin: 0 auto;
+  padding: 0.8rem;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.header-button {
+  display: block;
+  font-size: 1.2rem;
+  background-color: #f88c50;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
+}
+
+/* Landingpage section with image & paragraph text */
+
+.boat-image {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.crew-profiles-button {
+  display: block;
+  font-size: 1.2rem;
+  background-color: #2D5D89;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 2rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 
 
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+
+}
+}
+
+.fordaek-image {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 5rem auto 0;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.captain-button {
+  display: block;
+  font-size: 1.2rem;
+  background-color: #2D5D89;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 2rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 
 
+  &:hover {
+    background-color: #585858;
+    color: #fff;
 
+}
 
+}
+
+.section-image {
+  position: absolute;
+  width: 100%;
+  height: auto;  
+  object-fit: cover;
+}
+
+.h2-in-image {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
+.paragraph-in-image {
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  padding: 2px 20px;
+}
+
+.long-distance-button {
+  position: relative;
+  display: block;
+  font-size: 1.2rem;
+  background-color: #f88c50;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 2rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+}
+}
