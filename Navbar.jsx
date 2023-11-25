@@ -3,7 +3,7 @@ import React from "react"
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav className="desktop-nav">
             <ul className="nav-links">
                 <li><a href="/">All Seafares</a></li>
                 <li><a href="/">About</a></li>

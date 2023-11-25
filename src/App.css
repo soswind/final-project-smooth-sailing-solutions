@@ -34,7 +34,7 @@ nav li {
   margin: 0 1rem;
 }
 
-nav {
+.desktop-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,8 +80,40 @@ nav {
 }
 
 
+.mobile-nav {
+  background-color: #2D5D89;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
+.mobile-nav-links {
+  padding-left: 0px;
+}
 
+.mobile-nav-links li {
+  margin-bottom: 10px;
+}
 
+.mobile-nav a {
+  color: white;
+}
+
+.mobile-login-button {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.mobile-login-button a {
+  color: #2D5D89;
+}
+
+.mobile-nav-bar {
+  background-color: #2D5D89;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  text-align: right;
+}
 
 
