@@ -83,6 +83,7 @@ nav li {
 .mobile-nav {
   background-color: #2D5D89;
   padding: 20px;
+  margin-top: -30px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -113,6 +114,7 @@ nav li {
   background-color: #2D5D89;
   padding: 20px 40px;
   box-sizing: border-box;
+  margin-bottom: 0px;
   text-align: right;
 }
 
