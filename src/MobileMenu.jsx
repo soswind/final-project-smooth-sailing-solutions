@@ -1,5 +1,6 @@
 import './App.css';
 import burgerMenu from './images/burger-menu.png'
+import closeMenu from './images/menu-close.png'
 import React, { useState } from 'react';
 
 function MobileMenu() {
@@ -11,7 +12,8 @@ function MobileMenu() {
   return(
     <>
     <nav className='mobile-nav-bar'>
-      <img onClick={toggleNavbar} src={burgerMenu}></img>
+      <img onClick={toggleNavbar}
+      src={isOpen ? closeMenu : burgerMenu}></img>
     </nav>
     {isOpen && (
       <nav className='mobile-nav'>
