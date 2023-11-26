@@ -17,10 +17,6 @@ function App() {
       <NavbarTop />
     </div>
 
-    
-    <div>
-      <MobileMenuBar />
-    </div>
 
     <div>
       <MobileMenu />
