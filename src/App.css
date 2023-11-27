@@ -79,17 +79,15 @@ nav {
   }
 }
 
-
-
 /* Footer design */
 .footer-container{
   background-color: #6CC3C3;
   height: 250px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 .footer-container h3{
   color: #2D5D89;
@@ -97,7 +95,20 @@ nav {
 
 .footer-container ul{
   list-style: none;
-  width: 180px;
+  margin: 10px;
+  
+}
+.footer-info{
+  position: absolute;
+  right: 45%;
+}
+.footer-address{
+  position: absolute;
+  right: 32%;
+}
+.footer-links{
+  position: absolute;
+  right: 18%;
 }
 
 .footer-container a{
@@ -109,7 +120,9 @@ nav {
 }
 
 .footer-img{
-  display: flex;
+  position: absolute;
+  left: 20%;
+  bottom: 16%;
   width: 150px;
 }
 
