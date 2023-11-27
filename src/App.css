@@ -87,15 +87,35 @@ nav {
   height: 250px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 }
+.footer-container h3{
+  color: #2D5D89;
+}
 
+.footer-container ul{
+  list-style: none;
+  width: 180px;
+}
+
+.footer-container a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container a:hover{
+  color: #F88C51;
+}
 
 .footer-img{
   display: flex;
   width: 150px;
 }
 
+.footer-bottom{
+  color: #8C8F94;
+  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
 
