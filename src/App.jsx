@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavbarTop from './NavbarTop'
 import Navbar from '../Navbar'
+import MobileMenu from './MobileMenu'
+import MobileMenuBar from './MobileMenuBar'
 
 
 function App() {
@@ -15,8 +17,9 @@ function App() {
       <NavbarTop />
     </div>
 
+
     <div>
-      <Navbar />
+      <MobileMenu />
     </div>
 
      
