@@ -3,7 +3,7 @@ import React from "react"
 
 export default function Navbar() {
     return (
-        <nav className="nav-links">
+        <nav className="desktop-nav">
             <ul className="left">
                 <li><a href="/">All Seafares</a></li>
                 <li><a href="/">About</a></li>
@@ -14,6 +14,7 @@ export default function Navbar() {
                 <li><a className="login-button" href="/">Login</a></li>
             </ul>
         </nav>
+    
     )
 }
 

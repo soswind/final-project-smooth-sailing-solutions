@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import NavbarTop from './NavbarTop'
 import Navbar from '../Navbar'
-import Header from '../Header'
+import Header from '../Splashscreen'
 import Landingpage from '../Landingpage'
 import CarrouselLandingpage from '../CarrouselLandingpage'
+import SignUpForm from '../Signup'
 
 
 function App() {
@@ -25,6 +24,11 @@ function App() {
     <div>
       <Header />  
     </div>
+
+      <div>
+        <SignUpForm />
+      </div>
+    
 
     <div>
       <Landingpage />
