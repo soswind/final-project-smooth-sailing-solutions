@@ -7,6 +7,8 @@ import Navbar from '../Navbar'
 import Header from '../Header'
 import Landingpage from '../Landingpage'
 import CarrouselLandingpage from '../CarrouselLandingpage'
+import MobileMenu from './MobileMenu'
+import MobileMenuBar from './MobileMenuBar'
 
 
 function App() {
@@ -18,8 +20,9 @@ function App() {
       <NavbarTop />
     </div>
 
+
     <div>
-      <Navbar />
+      <MobileMenu />
     </div>
   
     <div>
