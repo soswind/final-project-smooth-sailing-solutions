@@ -82,7 +82,7 @@ nav {
 /* Footer design */
 .footer-container{
   background-color: #6CC3C3;
-  height: 250px;
+  height: 274px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -98,19 +98,13 @@ nav {
   margin: 10px;
   
 }
-.footer-info{
-  position: absolute;
-  right: 45%;
+.footer-text{
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.footer-address{
-  position: absolute;
-  right: 32%;
-}
-.footer-links{
-  position: absolute;
-  right: 18%;
-}
-
 .footer-container a{
   text-decoration: none;
   color: #ffffff;
@@ -120,10 +114,9 @@ nav {
 }
 
 .footer-img{
-  position: absolute;
-  left: 20%;
-  bottom: 16%;
-  width: 150px;
+  width: 172px;
+  position: relative;
+  left: 95%;
 }
 
 .footer-bottom{
@@ -132,3 +125,26 @@ nav {
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (max-width: 1170px){
+  .footer-container{
+    flex-direction: column;
+    height: 400px;
+  }
+  .footer-img{
+    left: 0;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 750px){
+  .footer-container{
+    height: 700px;
+  }
+  .footer-text{
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+  .footer-img{
+    width: 130px;
+  }
+}
