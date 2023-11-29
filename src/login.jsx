@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './App.css'
 
 function Login() {
@@ -20,6 +21,7 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
+                history.push('/dashboard');
             } else {
                 console.error("Error with login");
             }
