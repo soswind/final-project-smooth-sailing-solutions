@@ -1,4 +1,9 @@
 
+body {
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+}
 
 #root {
   display: flex;
@@ -25,7 +30,6 @@ p {
   padding: 0.5rem;
 }
 
-
 /* NavbarTop section with image & paragraph text */
 .navtop-img {
   display: flex;
@@ -46,7 +50,6 @@ p {
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 .navtop-text {
   display: flex;
   justify-content: center;
@@ -65,15 +68,19 @@ p {
 .desktop-nav {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 200px;
   align-items: center;
-  background-color: #2D5D89;
+  background-color: #2d5d89;
   padding: 1rem;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 18px;
   max-height: 20px;
-  gap: 200px;
 
- 
 }
 
 /* Navbar links design */
@@ -82,7 +89,8 @@ p {
 .desktop-nav li {
   margin: 0 1rem; 
   list-style: none;
-
+  justify-content: space-between;
+ 
 }
 
 .desktop-nav li a {
@@ -91,7 +99,6 @@ p {
   &:hover {
     color: #f88c50;
   }
-
 }
 
 /* Login button design */
@@ -153,6 +160,13 @@ p {
   border: none;
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+.login-button a {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: #2d5d89 !important;
 
   &:hover {
     background-color: #585858;
@@ -255,10 +269,90 @@ p {
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 
+
   &:hover {
     background-color: #585858;
     color: #fff;
 }
+}
+  
+.read-the-docs {
+  color: #888;
+}
+
+.mobile-nav {
+  background-color: #2D5D89;
+  padding: 20px;
+  margin-top: -30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mobile-nav-links {
+  padding-left: 0px;
+}
+
+.mobile-nav-links li {
+  margin-bottom: 10px;
+}
+
+.mobile-nav a {
+  color: white;
+}
+
+.mobile-login-button {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.mobile-login-button a {
+  color: #2D5D89;
+}
+
+.mobile-nav-bar {
+  background-color: #2D5D89;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+#login-form {
+  width: 500px;
+}
+
+.input {
+  display: block;
+  width: 500px;
+  background-color: white;
+  color: #2d5c88;
+  border: 2px solid #2d5c88;
+  padding: 7px 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.remember {
+  margin: 5px 0 20px;
+  text-align: left;
+}
+
+.button {
+  background-color: #2d5c88;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  width: 500px;
+  margin-bottom: 5px;  
+}
+
+.button--white {
+  background-color: white;
+  border: 2px solid #2d5c88;
+  color: #2d5c88;
 }
 
 
@@ -267,23 +361,74 @@ p {
 /**
  * Tabs
  */
+ .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
 
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 1rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
 
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #f3f3f3;
+  border: 1px solid #2D5D89;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
 
 .signup-form {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #f3f3f3;
+  background-color: #fff;
   border-radius: 5px;
-  border: 15px solid #f3f3f3;
+  border: 2px solid #2D5D89;
   font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
+  padding: 2rem;
 }
 
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .form-group {
@@ -300,7 +445,7 @@ label {
 }
 
 input {
-  width: 70%;
+  width: 80%;
   padding: 0.5rem;
   border: 1px solid #2D5D89;
   font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
@@ -312,19 +457,26 @@ input {
   background-color: #f88c50;
   color: #fff;
   border-radius: 5px;
-  padding: 0.5rem 1.5rem;
   border: none;
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 0 auto;
-}
+  margin: auto;}
+
 
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   .form-grid {
     grid-template-columns: 1fr; /* Change to one column on smaller screens */
   }
+}
+
+.p-signup {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 

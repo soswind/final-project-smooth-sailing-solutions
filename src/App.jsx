@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import NavbarTop from './NavbarTop'
-import Navbar from '../Navbar'
 import Header from '../Splashscreen'
 import Landingpage from '../Landingpage'
 import CarrouselLandingpage from '../CarrouselLandingpage'
 import SignUpForm from '../Signup'
+import MobileMenu from './MobileMenu'
+import Chat from '../Chat'
+
 
 
 function App() {
@@ -17,8 +19,9 @@ function App() {
       <NavbarTop />
     </div>
 
+
     <div>
-      <Navbar />
+      <MobileMenu />
     </div>
   
     <div>
@@ -28,7 +31,11 @@ function App() {
       <div>
         <SignUpForm />
       </div>
-    
+
+    <div>
+      <Chat/>
+    </div>
+
 
     <div>
       <Landingpage />

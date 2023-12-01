@@ -4,7 +4,7 @@ import React from "react"
 export default function Navbar() {
     return (
         <nav className="desktop-nav">
-            <ul className="left">
+            <ul className="nav-links">
                 <li><a href="/">All Seafares</a></li>
                 <li><a href="/">About</a></li>
                 <li><a href="/">Good To Know</a></li>
