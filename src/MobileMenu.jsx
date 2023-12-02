@@ -22,7 +22,7 @@ function MobileMenu() {
           <li><a href="/">About</a></li>
           <li><a href="/">Good To Know</a></li>
           <li><a href="/">Sign Up</a></li>
-          <li className="mobile-login-button"><a href="/">Login</a></li>
+          <li className="mobile-login-button"><a href="/login">Login</a></li>
       </ul>
   </nav>
     )}
