@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from './Header'
 import Login from './login'
@@ -13,16 +13,15 @@ function App() {
 
   return (
     <>
-    <h1>Hello</h1>
     <Header />
-    <Router>
-      <Switch>
-        <Route path="/" exact component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
-      </Switch>
-    </Router>
+    <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   </>
   )
 }
+
+// Use navigate istedet for router
 
 export default App

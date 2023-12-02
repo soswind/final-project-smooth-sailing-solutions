@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const history = useHistory();
+    const nav = useNavigate();
     
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,7 +22,7 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
-                history.push('/dashboard');
+                nav.navigate('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
             }
