@@ -365,6 +365,10 @@ nav li {
   font-weight: 500;
 }
 
+.seafareTitle {
+  text-align: center;
+}
+
 @media only screen and (min-width: 800px) {
   .seafareItems {
     display: grid;
