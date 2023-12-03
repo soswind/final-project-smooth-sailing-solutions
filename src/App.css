@@ -364,3 +364,17 @@ nav li {
   font-size: 16px;
   font-weight: 500;
 }
+
+@media only screen and (min-width: 800px) {
+  .seafareItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .seafareItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
