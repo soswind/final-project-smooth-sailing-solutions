@@ -1,20 +1,32 @@
-import React, { useState } from 'react';
-import Header from './Header.jsx'
-import SeafareItem from './SeafareItem.jsx';
+import React, { useEffect, useState } from 'react';
+import SeafareItem from './SeafareItem';
 
-export default function Seafares() {
-  
+const Seafares = () => {
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
+    fetch('/api/backend.php')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData(data);
+        console.log(data); // Log the data to the console
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
     <>
-    <h1 className="seafareTitle">All seafares</h1>
-    <div className="seafareItems">
-    <SeafareItem title="Togt 26. Fransk Polynesien" start_date="3. December" end_date="15. January" destination="Fransk Polynesien" seafare_area="Stillehavet" price="43.000 DKK" captain="Skipper Bent" />
-    <SeafareItem />
-    <SeafareItem />
-    <SeafareItem />
-    </div>
+      <SeafareItem data={data} />
     </>
   )
 }
+
+
+export default Seafares;

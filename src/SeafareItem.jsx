@@ -1,9 +1,17 @@
-export default function SeafareItem(props) {
+const SeafareItem = ({ data }) => {
   return (
-    <article className="seafareItem">
-      <h2 className="seafareItem_title">{props.title}</h2>
-      <p className="seafareItem_details">{props.start_date} - {props.end_date} | {props.destination} ({props.seafare_area})</p>
-      <h3 className="seafareItem_captain">Captain: {props.captain}</h3>
-    </article>
-  )
-}
+      <div>
+          {data.map(item => (
+              <article key={item.id} className="seafareItem">
+                  <h2 className="seafareItem_title">{item.title}</h2>
+                  <p className="seafareItem_details">
+                      {item.start_date} - {item.end_date} | {item.destination} ({item.seafare_area})
+                  </p>
+                  <h3 className="seafareItem_captain">Captain: {item.first_name} {item.last_name}</h3>
+              </article>
+          ))}
+      </div>
+  );
+};
+
+export default SeafareItem;
