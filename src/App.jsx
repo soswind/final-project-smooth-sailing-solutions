@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
-import Accordion from './Accordion'
+import Economy from './economy'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <Accordion title="Hewoo" description="works" />
+    <Economy />
   </>
   )
 }
