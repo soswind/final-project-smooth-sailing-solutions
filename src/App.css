@@ -363,10 +363,19 @@ nav li {
   transition: max-height 0.3s ease-in-out;
 }
 
+.accordion::after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
 .active {
   display: block;
 }
 
-.accordion_panel.active {
-  max-height: 200px;
+.accordion.active::after {
+  content: "\2796";
 }
+
