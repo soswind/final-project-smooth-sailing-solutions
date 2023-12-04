@@ -1,8 +1,15 @@
+import React, { useState } from "react";
+
 export default function Accordion(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+      setIsOpen(!isOpen);
+    }
+  
   return (
     <>
-      <button className="accordion">{props.title}</button>
-      <div class="accordion_panel">
+      <button className={`accordion ${isOpen ? 'active' : ''}`} onClick={handleOpen}>{props.title}</button>
+      <div class={`accordion_panel ${isOpen ? 'active' : ''}`}>
         <p>{props.description}</p>
       </div>
     </>

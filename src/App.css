@@ -360,4 +360,13 @@ nav li {
   background-color: #bbb;
   display: none;
   overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.active {
+  display: block;
+}
+
+.accordion_panel.active {
+  max-height: 200px;
 }
