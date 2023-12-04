@@ -7,7 +7,8 @@ import CarrouselLandingpage from '../CarrouselLandingpage'
 import SignUpForm from '../Signup'
 import MobileMenu from './MobileMenu'
 import Chat from '../Chat'
-
+import MobileMenu from './MobileMenu'
+import MobileMenuBar from './MobileMenuBar'
 
 
 function App() {

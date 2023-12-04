@@ -80,7 +80,6 @@ p {
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 18px;
   max-height: 20px;
-
 }
 
 /* Navbar links design */
@@ -90,7 +89,7 @@ p {
   margin: 0 1rem; 
   list-style: none;
   justify-content: space-between;
- 
+  text-decoration: none;
 }
 
 .desktop-nav li a {
@@ -274,6 +273,83 @@ p {
     background-color: #585858;
     color: #fff;
 }
+  
+.read-the-docs {
+  color: #888;
+}
+
+.mobile-nav {
+  background-color: #2D5D89;
+  padding: 20px;
+  margin-top: -30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mobile-nav-links {
+  padding-left: 0px;
+}
+
+.mobile-nav-links li {
+  margin-bottom: 10px;
+}
+
+.mobile-nav a {
+  color: white;
+}
+
+.mobile-login-button {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.mobile-login-button a {
+  color: #2D5D89;
+}
+
+.mobile-nav-bar {
+  background-color: #2D5D89;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  text-align: right;
+
+#login-form {
+  width: 500px;
+}
+
+.input {
+  display: block;
+  width: 500px;
+  background-color: white;
+  color: #2d5c88;
+  border: 2px solid #2d5c88;
+  padding: 7px 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.remember {
+  margin: 5px 0 20px;
+  text-align: left;
+}
+
+.button {
+  background-color: #2d5c88;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  width: 500px;
+  margin-bottom: 5px;  
+}
+
+.button--white {
+  background-color: white;
+  border: 2px solid #2d5c88;
+  color: #2d5c88;
 }
   
 .read-the-docs {
