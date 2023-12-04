@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Login from './login'
+import ChatComponent from './ChatComponent'
+import ChatMessage from './ChatMessage'
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
   return (
     <>
     <Header />
-<Login />
+    <ChatMessage />
+    <ChatComponent />
   </>
   )
 }

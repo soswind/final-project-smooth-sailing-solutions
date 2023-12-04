@@ -2,6 +2,8 @@ body {
   background-color: white;
   color: black;
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #root {
@@ -338,4 +340,109 @@ nav li {
   background-color: white;
   border: 2px solid #2d5c88;
   color: #2d5c88;
+}
+
+
+/* Chat section */
+
+/* ChatMessage.css */
+
+/* ChatComponent.css */
+/* App.css */
+
+/* ChatComponent styles */
+/* ChatComponent.css */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.message-input {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.message-input {
+  flex-grow: 1;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  background-color: #2d5d89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #585858;
+  }
+}
+
+/* ChatMessage styles */
+
+.chat-message {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #efefef;
+  color: #2d5c88;
+  font-weight: bold;
+}
+
+.bot-message {
+  align-self: flex-end;
+  background-color: #5a7791;
+  color: #fff;
+  font-weight: bold;
+}
+
+.message-sender {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.message-text {
+  font-size: 1rem;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 767px) {
+  .chat-message {
+    padding: 8px;
+  }
+
+  .user-message,
+  .bot-message {
+    align-self: auto;
+  }
+
+  .user-message:nth-child(even),
+  .bot-message:nth-child(even) {
+    align-self: flex-end;
+  }
 }
