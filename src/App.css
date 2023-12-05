@@ -339,3 +339,46 @@ nav li {
   border: 2px solid #2d5c88;
   color: #2d5c88;
 }
+
+.seafareItem {
+  background-color: #dadada;
+  padding: 20px;
+  margin: 20px;
+}
+
+.seafareItem_title {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+}
+
+.seafareItem_details {
+  padding-top: 0px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.seafareItem_captain {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.seafareTitle {
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .seafareItems div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .seafareItems div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
