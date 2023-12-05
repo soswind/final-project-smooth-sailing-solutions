@@ -466,6 +466,22 @@ p {
   background: #fff;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.checkbox-input {
+  max-width: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.checkbox-label {
+  font-family: 'Open Sans', sans-serif; /* Specify the font family as needed */
+}
+
+
 .tabs input[type="radio"] {
   display: none;
 }
@@ -504,6 +520,9 @@ p {
   padding: 2rem;
 }
 
+
+
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -518,8 +537,6 @@ p {
 
 .form-label {
   max-width: 80%;
-
-
 }
 
 input {
@@ -530,7 +547,6 @@ input {
   margin: auto;
   background-color: white;
 }
-
 .signup-button {
   display: block;
   background-color: #f88c50;
@@ -540,7 +556,17 @@ input {
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: auto;}
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Tilføj denne linje */
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
+}
+
+
 
 
 /* Media query for smaller screens */
