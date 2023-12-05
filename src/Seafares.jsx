@@ -22,9 +22,9 @@ const Seafares = () => {
   }, []);
 
   return (
-    <>
+    <div className="seafareItems">
       <SeafareItem data={data} />
-    </>
+    </div>
   )
 }
 

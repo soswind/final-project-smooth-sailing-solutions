@@ -370,14 +370,14 @@ nav li {
 }
 
 @media only screen and (min-width: 800px) {
-  .seafareItems {
+  .seafareItems div {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 1300px) {
-  .seafareItems {
+  .seafareItems div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }

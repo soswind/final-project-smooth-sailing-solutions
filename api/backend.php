@@ -34,9 +34,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 mysqli_close($mySQL);
 
-if (ob_get_length() > 0) {
-    ob_clean();
-}
 header('Content-Type: application/json');
 echo json_encode($seafareData);
-?>
