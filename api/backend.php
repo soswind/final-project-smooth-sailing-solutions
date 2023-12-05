@@ -1,6 +1,5 @@
 <?php
 include './mysql.php';
-/*
 header('Content-Type: application/json');
 
 // Get data from the request body
@@ -13,26 +12,4 @@ if ($data['email'] === 'example_user@gmail.com' && $data['password'] === 'exampl
 } else {
     http_response_code(401);
     echo json_encode(['message' => 'Login failed']);
-} */
-
-// Check if the connection is successful
-if (!$mySQL) {
-    die('Database connection error: ' . mysqli_connect_error());
 }
-
-$query = "SELECT * FROM seafares";
-$result = mysqli_query($mySQL, $query);
-
-if (!$result) {
-    die('Query failed: ' . mysqli_error($mySQL));
-}
-
-$seafareData = array();
-while ($row = mysqli_fetch_assoc($result)) {
-    $seafareData[] = $row;
-}
-
-mysqli_close($mySQL);
-
-header('Content-Type: application/json');
-echo json_encode($seafareData);

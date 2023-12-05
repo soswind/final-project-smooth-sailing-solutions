@@ -5,7 +5,7 @@ const Seafares = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/api/backend.php')
+    fetch('/api/seafares.php')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
