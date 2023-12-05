@@ -382,3 +382,103 @@ nav li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Sign up form design Desktop*/
+
+.seafare-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #2D5D89;
+  font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
+  color: #585858;
+  padding: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+
+.form-label {
+  max-width: 80%;
+  display: block;
+}
+
+input, select {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #2D5D89;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  margin: auto;
+  background-color: white;
+}
+
+select {
+  width: 90%;
+  padding: 0.5rem;
+}
+
+textarea {
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0.5rem;
+}
+
+.single {
+  width: 95%;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+
+}
+
+.seafare-button {
+  display: block;
+  background-color: #f88c50;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Tilføj denne linje */
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
+}
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: 1fr; /* Change to one column on smaller screens */
+  }
+}
+
+.p-signup {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
