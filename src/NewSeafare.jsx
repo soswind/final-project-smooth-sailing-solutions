@@ -2,7 +2,7 @@ export default function NewSeafare() {
   return(
     <>
     <h2>Hello</h2>
-    <form className="seafare-form" action="">
+    <form method="POST" className="seafare-form" action="/api/create_seafare.php">
     
     <label className="form-label" htmlFor="title">Title:</label>
     <input className="single" type="text" name="title" id="title" />
@@ -60,7 +60,7 @@ export default function NewSeafare() {
     <label className="form-label" htmlFor="price">Price:</label>
     <input className="single" type="number" name="price" id="price" />
 
-
+<button type="submit">Submit</button>
     
     </form>
     </>
