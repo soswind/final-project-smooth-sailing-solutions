@@ -273,6 +273,7 @@ p {
     background-color: #585858;
     color: #fff;
 }
+}
   
 .read-the-docs {
   color: #888;
@@ -314,6 +315,7 @@ p {
   box-sizing: border-box;
   margin-bottom: 0px;
   text-align: right;
+}
 
 #login-form {
   width: 500px;
