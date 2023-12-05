@@ -528,6 +528,7 @@ input {
   border: 1px solid #2D5D89;
   font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
+  background-color: white;
 }
 
 .signup-button {
