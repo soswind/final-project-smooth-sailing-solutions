@@ -12,7 +12,7 @@ function Login() {
 
         // Sender login dataen til vores backend
         try {
-            const response = await fetch('/api/backend.php', {
+            const response = await fetch('/api/login.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
