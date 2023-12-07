@@ -1,32 +1,22 @@
 import React from "react";
 import "./GastProfile.css";
-import "./App.css";
-import NavbarTop from "./NavbarTop";
-import Navbar from "./Navbar"; 
-import NavbarBottom from "./NavbarBottom";
 
 function GastProfile() {
     return (
         <>
-        <div>
-        <NavbarTop />
-        </div>
-    
-        <div>
-        <Navbar />
-        </div>
-    
-        <div className="gastprofile">
+        <div className="gastProfile">
             <p className="gastName">Pernille Pernillesen</p>
-            <p className="profileType">Gast</p>
+            <p className="profileType">&#40;gast&#41;</p>
+            <p className="gastRating">Rating:</p> <img src="../src/images/rating-stars.png" className="ratingStars"/>
+            <a href="#" className="seeReviews">&#40;see reviews&#41;</a>
 
             <div className="gastProfileInfo">
-                <img src="../scr/gastImage.jgp" alt="Gast profile image"/>
+                <img src="../src/images/gastImage.jpg" className="gast-img"></img>
                 <div className="gastProfileText">
                     <p className="gastAge">Age</p>
-                    <p className="gastAgeYear">45 years</p>
+                    <p className="gastAge2">45 years</p>
                     <p className="gastArea">Area</p>
-                    <p className="gastAgeYear">Aarhus</p>
+                    <p className="gastArea2">Aarhus</p>
                 </div>
             </div>
             <button className="sendChat"> send chat</button>
@@ -53,15 +43,14 @@ function GastProfile() {
         <div className="gastReviews">
             <h2>Reviews</h2>
             <div className="gastReviewsText">
-                <p className="review1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien ac nisl ultrices ultricies. </p>
-                <p className="review2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien ac nisl ultrices ultricies. </p>
-                <p className="review3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien ac nisl ultrices ultricies. </p>
+                <p className="review1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien ac nisl ultrices ultricies." </p>
+                <p className="name">- Skipper blabla </p>
+                <p className="review2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien ac nisl ultrices ultricies." </p>
+                <p className="name">- Skipper blabla</p>
+                <a href="#" className="seeAll">see all reviews</a>
             </div>
         </div>
         
-        <div>
-        <NavbarBottom />
-        </div>
         </>
     );
 }
