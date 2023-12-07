@@ -8,9 +8,8 @@ import Login from './login'
 import Dashboard from './Dashboard'
 
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
     <>
     <Header />
@@ -19,6 +18,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   </>
+
   )
 }
 

@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  background-color: #fefefe;
   margin: 0;
 }
 
@@ -162,6 +163,75 @@ nav li {
   &:hover {
     background-color: #585858;
     color: #fff;
+  }
+}
+
+/* Footer design */
+.footer-container {
+  background-color: #6cc3c3;
+  height: 274px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.footer-container h3 {
+  color: #2d5d89;
+}
+
+.footer-container ul {
+  list-style: none;
+  margin: 10px;
+}
+.footer-text {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container a:hover {
+  color: #f88c51;
+}
+
+.footer-img {
+  width: 172px;
+  position: relative;
+  left: 95%;
+}
+
+.footer-bottom {
+  color: #8c8f94;
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1170px) {
+  .footer-container {
+    flex-direction: column;
+    height: 400px;
+  }
+  .footer-img {
+    left: 0;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer-container {
+    height: 700px;
+  }
+  .footer-text {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+  .footer-img {
+    width: 130px;
   }
 }
 
@@ -336,8 +406,160 @@ nav li {
   margin-bottom: 5px;
 }
 
+.button--small {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
 .button--white {
   background-color: white;
   border: 2px solid #2d5c88;
   color: #2d5c88;
+}
+
+.seafareItem {
+  background-color: #dadada;
+  padding: 20px;
+  margin: 20px;
+}
+
+.seafareItem_title {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+}
+
+.seafareItem_details {
+  padding-top: 0px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.seafareItem_captain {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.seafareTitle {
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .seafareItems div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .seafareItems div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Sign up form design Desktop*/
+
+.seafare-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #2d5d89;
+  font-family: "open sans", sans-serif, Arial, Helvetica, sans-serif;
+  color: #585858;
+  padding: 2rem;
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+
+.form-label {
+  max-width: 80%;
+  display: block;
+}
+
+input,
+select {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
+  margin: auto;
+  background-color: white;
+}
+
+select {
+  width: 90%;
+  padding: 0.5rem;
+}
+
+textarea {
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.single {
+  width: 95%;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+}
+
+.seafare-button {
+  display: block;
+  background-color: #f88c50;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Tilføj denne linje */
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: 1fr; /* Change to one column on smaller screens */
+  }
+}
+
+.p-signup {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+  color: black;
 }
