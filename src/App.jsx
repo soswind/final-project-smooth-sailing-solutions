@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavbarTop from './NavbarTop'
 import Navbar from '../Navbar'
+import NavbarBottom from './NavbarBottom'
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    <div>
+      <NavbarBottom />
+    </div>
     </>
   )
 }

@@ -1,0 +1,174 @@
+/*----- PROFILE -----*/
+.skipperprofile{
+    width: 375px;
+    margin: 0 auto;
+}
+.skipperName{
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 0;
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.profileType-skipper{
+    position: relative;
+    float: right;
+    top: -60px;
+    right: 40px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.skipperAge, .skipperExperience, .skipperArea{
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.skipperAge{
+    position: relative;
+    float: right;
+    right: 90px;
+    top: 5%;
+}
+
+.skipperExperience{
+    position: relative;
+    float: right;
+    right: -55px;
+    top: 70px;
+}
+.skipperArea{
+    position: relative;
+    float: right;
+    right: 110px;
+    top: 80px;
+}
+
+.skipperAgeYear, .skipperExperienceYears, .skipperAreaName{
+    color: #707070;
+}
+.skipperAgeYear{
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 20px;
+}
+.skipperExperienceYears{
+    position: relative;
+    float: right;
+    right: -115px;
+    top: 90px;
+}
+.skipperAreaName{
+    position: relative;
+    float: right;
+    right: 60px;
+    top: 100px;
+}
+
+.skipper-img{
+    position: absolute;
+    margin-top: 10px;
+    width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #707070;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*----- BUTTONS -----*/
+
+.sendChat{
+    position: relative;
+    top: 120px;
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #2D5D89;
+}
+.requestNo{
+    position: relative;
+    top: 125px;
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #6CC3C3;
+}
+/*----- SEA FAIRIES COMPLETED-----*/
+
+.skipperCompleted{
+    background-color: #EFEFEF;
+    height: 100px;
+    position: relative;
+    top: 150px;
+}
+.skipperCompleted h2{
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0 0 120px;
+}
+.skipperCompleted p{
+    color: #6CC3C3;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 0 0 120px;
+}
+/*----- SEA FAIRIES PLANNED-----*/
+
+.skipperPlanned{
+    min-height: 680px;
+    position: relative;
+    top: 130px;
+    margin: 10px;
+}
+
+.skipperPlanned h2{
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    left: 110px;
+}
+.planned1{
+    background-color: #6CC3C3;
+    width: 285px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.planned2{
+    background-color: #2D5D89;
+    width: 285px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.skipperSeeMore{
+    color:#F88C51;
+    text-transform: uppercase;
+    float: right;
+    margin: 20px;
+}
+
+.skipperSeeMore:hover{
+    color:#2D5D89;
+    text-decoration: underline;
+}
