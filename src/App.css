@@ -350,7 +350,6 @@ nav li {
   max-height: 300px;
   object-fit: cover;
   margin: auto 0;
-  border-radius: 15px;
   align-items: center;
   object-position: 50% 35%; 
 }
@@ -365,15 +364,21 @@ nav li {
 
 .p-on-find-gast {
   display: flex;
+  justify-content: center;
+  text-align: center; /* Centrer tekst i forhold til container */
   font-size: 1rem;
+  padding: 1rem;
+  width: auto;
 }
 
-.profiles-container {
+
+.profiles-container .outer-profile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 20px;
   gap: 20px;
 }
+
 
 .profile {
   box-sizing: border-box;
@@ -382,20 +387,29 @@ nav li {
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0;
+  background-color: #f3f3f3;
 }
 
 .profile h2 {
   margin-bottom: 8px;
   color: #2D5D89;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 .profile p {
   margin-bottom: 4px;
-  color: #585858;
+  color: black;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold; /* Tilføjet denne linje for fed skrift */
 }
 
+
+
+
 @media screen and (max-width: 767px) {
-  .profiles-container {
+  .profiles-container .outer-profile {
     grid-template-columns: 1fr; /* Stack profilerne på mindre skærme */
     margin: 16px 15px;
   }

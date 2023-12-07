@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
 import './App.css';
-import MobileMenu from './MobileMenu';
 import Profile from './Profile';
 
 export default function FindGaster() {
@@ -32,7 +30,7 @@ export default function FindGaster() {
         by sending them a message, if you want them to be a part of your crew for the next journey.
       </p>
 
-    <div className='profile-container'>
+    <div className='profiles-container'>
       <Profile data={data} />
       </div>
     </div>
