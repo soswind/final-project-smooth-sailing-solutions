@@ -32,15 +32,13 @@ const Profile = ({ id }) => {
   }
 
   return (
-    <div className="profiles-container">
     <div className="profile">
       <h2>{profileData.name}</h2>
       <p>Age: {profileData.age}</p>
       <p>ID: {profileData.id}</p>
       <p>Description: {profileData.description}</p>
       </div>
-      {/* Andre oplysninger om profilen kan tilføjes her */}
-    </div>
+    
   );
 };
 

@@ -21,10 +21,12 @@ export default function FindGaster() {
         by sending them a message, if you want them to be a part of your crew for the next journey.
       </p>
 
+    <div className='profiles-container'>
       {/* Vis profiler baseret på data i `profiles` arrayet */}
       {profiles.map((profile) => (
         <Profile key={profile.id} {...profile} />
       ))}
+      </div>
     </div>
   );
 }
