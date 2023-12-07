@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import './App.css';
 import MobileMenu from './MobileMenu';
 import Profile from './Profile';
 
 export default function FindGaster() {
-  const profiles = [
-    { id: 1, name: 'John Doe', age: 30, description: 'A brief description of John.' },
-    { id: 2, name: 'Jane Doe', age: 25, description: 'A brief description of Jane.' },
-    { id: 3, name: 'John Smith', age: 35, description: 'A brief description of John.' },
-    // ... tilføj flere profiler efter behov
-  ];
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('/api/find_crew.php')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      }) 
+      .then(data => {
+        setData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
 
   return (
     <div>
@@ -21,12 +32,10 @@ export default function FindGaster() {
         by sending them a message, if you want them to be a part of your crew for the next journey.
       </p>
 
-    <div className='profiles-container'>
-      {/* Vis profiler baseret på data i `profiles` arrayet */}
-      {profiles.map((profile) => (
-        <Profile key={profile.id} {...profile} />
-      ))}
+    <div className='profile-container'>
+      <Profile data={data} />
       </div>
     </div>
+    
   );
 }
