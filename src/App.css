@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   margin: 0;
 }
 
@@ -166,73 +166,71 @@ nav li {
   }
 }
 
-
 /* Footer design */
-.footer-container{
-  background-color: #6CC3C3;
+.footer-container {
+  background-color: #6cc3c3;
   height: 274px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
-.footer-container h3{
-  color: #2D5D89;
+.footer-container h3 {
+  color: #2d5d89;
 }
 
-.footer-container ul{
+.footer-container ul {
   list-style: none;
   margin: 10px;
-  
 }
-.footer-text{
+.footer-text {
   width: 700px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-container a{
+.footer-container a {
   text-decoration: none;
   color: #ffffff;
 }
-.footer-container a:hover{
-  color: #F88C51;
+.footer-container a:hover {
+  color: #f88c51;
 }
 
-.footer-img{
+.footer-img {
   width: 172px;
   position: relative;
   left: 95%;
 }
 
-.footer-bottom{
-  color: #8C8F94;
+.footer-bottom {
+  color: #8c8f94;
   text-align: center;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 1170px){
-  .footer-container{
+@media only screen and (max-width: 1170px) {
+  .footer-container {
     flex-direction: column;
     height: 400px;
   }
-  .footer-img{
+  .footer-img {
     left: 0;
     margin: 30px auto;
   }
 }
-@media only screen and (max-width: 750px){
-  .footer-container{
+@media only screen and (max-width: 750px) {
+  .footer-container {
     height: 700px;
   }
-  .footer-text{
+  .footer-text {
     flex-direction: column;
     text-align: center;
     width: auto;
   }
-  .footer-img{
+  .footer-img {
     width: 130px;
   }
 }
@@ -461,7 +459,6 @@ nav li {
   }
 }
 
-
 /* Sign up form design Desktop*/
 
 .seafare-form {
@@ -469,8 +466,8 @@ nav li {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
-  border: 2px solid #2D5D89;
-  font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 2px solid #2d5d89;
+  font-family: "open sans", sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
   padding: 2rem;
   margin-bottom: 30px;
@@ -494,11 +491,12 @@ nav li {
   display: block;
 }
 
-input, select {
+input,
+select {
   width: 80%;
   padding: 0.5rem;
-  border: 1px solid #2D5D89;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 1px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
   background-color: white;
 }
@@ -532,7 +530,7 @@ textarea {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 1rem 2rem 1rem 2rem;
   padding: 0.5rem 1rem;
@@ -544,9 +542,6 @@ textarea {
   }
 }
 
-
-
-
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   .form-grid {
@@ -555,9 +550,14 @@ textarea {
 }
 
 .p-signup {
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
+}
+
+input {
+  background-color: white;
+  color: black;
 }
