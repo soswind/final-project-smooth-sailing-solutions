@@ -4,11 +4,9 @@ import NavbarTop from './NavbarTop'
 import Header from '../Splashscreen'
 import Landingpage from '../Landingpage'
 import CarrouselLandingpage from '../CarrouselLandingpage'
-import SignUpForm from '../Signup'
+import SignUpForm from './Signup'
 import MobileMenu from './MobileMenu'
-import Chat from '../Chat'
-import MobileMenu from './MobileMenu'
-import MobileMenuBar from './MobileMenuBar'
+
 
 
 function App() {
@@ -33,9 +31,7 @@ function App() {
         <SignUpForm />
       </div>
 
-    <div>
-      <Chat/>
-    </div>
+   
 
 
     <div>

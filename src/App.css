@@ -521,8 +521,6 @@ p {
 }
 
 
-
-
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -556,7 +554,7 @@ input {
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 1rem 2rem 1rem 2rem;
+  margin: 1rem 2rem 2rem 2rem;
   padding: 0.5rem 1rem;
   margin-right: auto; /* Tilføj denne linje */
 

@@ -3,7 +3,7 @@ import React from "react";
 export default function SignUpForm() {
   return (
    <>
-   <p className="p-signup">Choose your profile </p>
+   <p className="p-signup">Choose your profile</p>
 
       <div className="tabs">
         <input type="radio" name="tabs" id="tabone" checked="checked" />
@@ -14,8 +14,13 @@ export default function SignUpForm() {
           
           <form className="form-grid">
             <div className="form-group">
-              <label className="form-label" htmlFor="name">NAME</label>
-              <input type="text" id="gast_name" name="gast_name" placeholder="Name and surname" required />
+              <label className="form-label" htmlFor="name">FIRSTNAME</label>
+              <input type="text" id="gast_first_name" name="gast_first_name" placeholder="Firstname" required />
+            </div>
+
+            <div className="form-group">
+              <label className="form-label" htmlFor="name">LASTNAME</label>
+              <input type="text" id="gast_last_name" name="gast_last_name" placeholder="Lastname" required />
             </div>
 
             <div className="form-group">
@@ -69,14 +74,16 @@ export default function SignUpForm() {
               <input type="text" id="gast_skills" name="gast_skills" placeholder="Write your skills" required />
             </div>
 
+            <button className="signup-button" type="submit">
+              CREATE ACCOUNT
+            </button>
+
             <div className="checkbox">
     <input className="checkbox-input" type="checkbox" id="gast_privacyCheckbox" name="gast_privacyCheckbox" required />
     <label className="checkbox-label" htmlFor="privacyCheckbox">I accept the privacy policy</label>
   </div>
 
-            <button className="signup-button" type="submit">
-              CREATE ACCOUNT
-            </button>
+        
           </form>
         </div>
         </div>
@@ -91,8 +98,13 @@ export default function SignUpForm() {
 <div className="signup-form">
         <form className="form-grid">
             <div className="form-group">
-              <label className="form-label" htmlFor="name">NAME</label>
-              <input type="text" id="captain_name" name="captain_name" placeholder="Name and surname" required />
+              <label className="form-label" htmlFor="name">FIRSTNAME</label>
+              <input type="text" id="captain_first_name" name="captain_first_name" placeholder="Firstname" required />
+            </div>
+
+            <div className="form-group">
+              <label className="form-label" htmlFor="name">LASTNAME</label>
+              <input type="text" id="captain_last_name" name="captain_last_name" placeholder="Lastname" required />
             </div>
 
             <div className="form-group">
@@ -146,12 +158,14 @@ export default function SignUpForm() {
               <input type="text" id="captain_skills" name="captain_skills" placeholder="Write your skills" required />
             </div>
 
+            <button className="signup-button" type="submit">CREATE ACCOUNT</button>
+
+
             <div className="checkbox">
     <input className="checkbox-input" type="checkbox" id="captain_privacyCheckbox" name="captain_privacyCheckbox" required />
     <label className="form-label" htmlFor="privacyCheckbox">I accept the privacy policy</label>
   </div>
 
-            <button className="signup-button" type="submit">CREATE ACCOUNT</button>
           </form>
         </div>
         </div>
