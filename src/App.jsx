@@ -7,6 +7,7 @@ import NavbarBottom from './NavbarBottom'
 
 import Header from './Header'
 import Seafares from './Seafares'
+import NewSeafare from './NewSeafare'
 
 
 
@@ -43,7 +44,7 @@ function App() {
     </>
 
     <Header />
-    <Seafares />
+    <NewSeafare />
   </>
 
   )
