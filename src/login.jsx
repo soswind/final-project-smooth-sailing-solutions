@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const nav = useNavigate();
     
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         // Sender login dataen til vores backend
         try {
-            const response = await fetch('/api/backend.php', {
+            const response = await fetch('/api/login.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -20,6 +22,7 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
+                nav('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
             }
