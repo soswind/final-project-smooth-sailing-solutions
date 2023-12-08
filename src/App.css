@@ -49,6 +49,7 @@ p {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 .navtop-text {
   display: flex;
   justify-content: center;
@@ -586,8 +587,6 @@ input {
 }
 
 
-
-
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   .form-grid {
@@ -602,13 +601,6 @@ input {
   margin: 0 auto;
   text-align: center;
 }
-
-
-
-
-
-
-
 
 
 /*  Find Gaster side */ 
@@ -673,8 +665,6 @@ input {
   font-size: 1rem;
   font-weight: bold; /* Tilføjet denne linje for fed skrift */
 }
-
-
 
 
 @media screen and (max-width: 767px) {
@@ -794,6 +784,28 @@ input {
   padding: 0.5rem;
 }
 
+.tabone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 7rem;
+  max-height: 1.5rem;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.tabtwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 7rem;
+  max-height: 1.5rem;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+
 .tabs label {
   order: initial;
   display: block;
@@ -801,7 +813,6 @@ input {
   margin-right: 0.2rem;
   cursor: pointer;
   background: #fff;
-  font-weight: bold;
   transition: background ease 0.2s;
 }
 
@@ -841,8 +852,7 @@ input {
   }
 }
 
-.signup-form {
-.seafareItem {
+.seafare-form {
   background-color: #dadada;
   padding: 20px;
   margin: 20px;
@@ -887,17 +897,13 @@ input {
 
 /* Sign up form design Desktop*/
 
-.seafare-form {
+.signup-form {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
   border: 2px solid #2D5D89;
-  font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
-  color: #585858;
-  padding: 2rem;
-  border: 2px solid #2d5d89;
-  font-family: "open sans", sans-serif, Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
   padding: 2rem;
   margin-bottom: 30px;
@@ -966,16 +972,17 @@ textarea {
   padding: 0.5rem;
 }
 
-.seafare-button {
-  display: block;
+.signup-button {
   background-color: #f88c50;
   color: #fff;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: auto;
+  margin: 1rem 1rem 2rem 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: auto;
 
   &:hover {
     background-color: #585858;
@@ -986,18 +993,6 @@ textarea {
   font-size: 0.8rem;
   color: #000;
   padding: 0.5rem;
-}
-
-  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  margin: 1rem 2rem 1rem 2rem;
-  padding: 0.5rem 1rem;
-  margin-right: auto; /* Tilføj denne linje */
-
-  &:hover {
-    background-color: #585858;
-    color: #fff;
-  }
 }
 
 /* Media query for smaller screens */

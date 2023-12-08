@@ -1,6 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import "./App.css";
 
 export default function SignUpForm() {
+  const nav = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+
+    fetch("/api/gast_signup.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data); 
+        nav('/login'); // Check react router documentation for correct function (It's not navigate)
+
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
+  
+
   return (
     <>
       <p className="p-signup">Choose your profile</p>
@@ -12,7 +38,8 @@ export default function SignUpForm() {
         </label>
         <div className="tab">
           <div className="signup-form">
-            <form action="/api/signup.php" method="POST" className="form-grid">
+          <form onSubmit={handleSubmit} className="form-grid">
+          {/* <form action="/api/signup.php" method="POST" className="form-grid"> */}
               <div className="form-group">
                 <label className="form-label" htmlFor="gast_first_name">
                   FIRSTNAME
@@ -203,7 +230,7 @@ export default function SignUpForm() {
         </label>
         <div className="tab">
           <div className="signup-form">
-            <form className="form-grid">
+          <form onSubmit={handleSubmit} className="form-grid">
               <div className="form-group">
                 <label className="form-label" htmlFor="captain_first_name">
                   FIRSTNAME
