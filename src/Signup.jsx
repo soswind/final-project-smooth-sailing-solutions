@@ -7,7 +7,7 @@ export default function SignUpForm() {
 
       <div className="tabs">
         <input type="radio" name="tabs" id="tabone" defaultChecked />
-        <label htmlFor="tabone">NEW GAST</label>
+        <label className="tabone" htmlFor="tabone">NEW GAST</label>
         <div className="tab">
         <div className="signup-form">
 
@@ -102,7 +102,7 @@ export default function SignUpForm() {
 {/* Tab 2 */}
 
         <input type="radio" name="tabs" id="tabtwo" />
-        <label htmlFor="tabtwo">NEW CAPTAIN</label>
+        <label className="tabtwo" htmlFor="tabtwo">NEW CAPTAIN</label>
         <div className="tab">
 
 <div className="signup-form">
