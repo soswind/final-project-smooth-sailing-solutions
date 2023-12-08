@@ -652,7 +652,6 @@ nav li {
   }
 }
 
-.signup-form {
 .seafareItem {
   background-color: #dadada;
   padding: 20px;
@@ -799,6 +798,7 @@ textarea {
   padding: 0.5rem;
 }
 
+.signup-form {
   font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 1rem 2rem 1rem 2rem;
