@@ -1,0 +1,244 @@
+/*----- Gast Name -----*/
+.gastProfile{
+    width: 375px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gastName{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.profileType{
+    position: relative;
+    float: right;
+    top: -35px;
+    right: 60px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.gastRating{
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.ratingStars{
+    width: 140px;
+    position: relative;
+    float: right;
+    right: 150px;
+    top: -53px;
+}
+.seeReviews{
+    color: #F88C51;
+    position: relative;
+    top: -20px;
+    text-transform: uppercase;
+}
+.seeReviews:hover{
+    color: #6CC3C3;
+}
+
+.gast-img{
+    position: absolute;
+    margin-top: 10px;
+    width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #707070;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.gastAge, .gastArea{
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.gastAge{
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 10%;
+}
+
+.gastArea{
+    position: relative;
+    float: right;
+    right: -70px;
+    top: 70px;
+}
+
+.gastAge2, .gastArea2{
+    color: #707070;
+}
+
+.gastAge2{
+    position: relative;
+    float: right;
+    right: -32px;
+    top: 30px;
+}
+.gastArea2{
+    position: relative;
+    float: right;
+    top: 100px;
+    right: -120px;
+}
+
+/*----- BUTTONS -----*/
+
+.sendChat{
+    position: relative;
+    top: 120px;
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #2D5D89;
+}
+.requestNo{
+    position: relative;
+    top: 125px;
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #6CC3C3;
+}
+/*----- ABOUT ME -----*/
+.gastAboutMe{
+    display: block;
+    position: relative;
+    top: 50px;
+    height: 181px;
+    background-color: #EFEFEF;
+    overflow: hidden;
+}
+
+.gastAboutMe h2{
+    position: relative;
+    left: 120px;
+    font-size: 20px;
+    color: #2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.gastAboutMe p{
+    font-size: 18px;
+    color: #707070;
+    width: 340px;
+    margin: 0 auto;
+}
+
+/*----- SKILLS -----*/
+.gastSkills{
+    display: block;
+    position: relative;
+    top: 50px;
+    min-height: 250px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.gastSkills h2{
+    position: relative;
+    left: 120px;
+    font-size: 20px;
+    color:#2D5D89;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.kategorie2, .kategorie3, .kategorie6{
+    background-color: #2D5D89;
+    color: #FEFEFE;
+    width: 135px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.kategorie1, .kategorie4, .kategorie5{
+    background-color: #6CC3C3;
+    color: #FEFEFE;
+    width: 135px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.kategorie1, .kategorie3, .kategorie5{
+    position: relative;
+    left: 120px;
+    top: 20px;
+    margin: -20px;
+}
+.kategorie2, .kategorie4, .kategorie6{
+    position: relative;
+    left: 300px;
+    top: -10px;
+    margin: -20px;
+}
+/*----- GAST REVIEWS -----*/
+
+.gastReviews{
+    display: block;
+    position: relative;
+    background-color: #5A7791;
+    top: 50px;
+    min-height: 400px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.gastReviews h2{
+    position: relative;
+    left: 120px;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.gastReviewsText{
+    width: 340px;
+    margin: 0 auto;
+}
+.name{
+    color: #6CC3C3;
+    font-style: italic;
+}
+.seeAll{
+    position: relative;
+    top: 10px;
+    left: 190px;
+    padding: 10px;
+    font-size: 18px;
+    color: #6CC3C3;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+}
+.seeAll:hover{
+    color: #F88C51;
+}

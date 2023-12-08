@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const nav = useNavigate();
     
-    const handleSumbit = async (e) => {
-        e.preventdefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
         // Sender login dataen til vores backend
         try {
-            const response = await fetch('/backend.php', {
+            const response = await fetch('/api/login.php', {
                 method: 'POST',
                 headers: {
-                    'Content/Type': 'application/json',
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({email, password })
             });
 
             if (response.ok) {
                 console.log("Login successful");
+                nav('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
             }
@@ -30,7 +33,7 @@ function Login() {
     
     return(
         <>
-        <form id="login-form" onSubmit={handleSumbit}>
+        <form id="login-form" onSubmit={handleSubmit}>
             <label className="input-item" htmlFor="email">E-mail:
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="email" id="email" className="input" />
             </label>

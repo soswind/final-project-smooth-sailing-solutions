@@ -1,6 +1,5 @@
 <?php
-include '../mysql.php';
-
+include './mysql.php';
 header('Content-Type: application/json');
 
 // Get data from the request body

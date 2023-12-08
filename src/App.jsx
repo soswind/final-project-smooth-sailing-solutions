@@ -6,43 +6,25 @@ import Landingpage from '../Landingpage'
 import CarrouselLandingpage from '../CarrouselLandingpage'
 import SignUpForm from './Signup'
 import MobileMenu from './MobileMenu'
+import Header from './Header'
+import { Routes, Route } from 'react-router-dom';
+import Header from './Header'
+import Login from './login'
+import Dashboard from './Dashboard'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <div>
-      <NavbarTop />
-    </div>
-
-
-    <div>
-      <MobileMenu />
-    </div>
-  
-    <div>
-      <Header />  
-    </div>
-
-      <div>
-        <SignUpForm />
-      </div>
-
-   
-
-
-    <div>
-      <Landingpage />
-    </div>
-
-    <div>
-      <CarrouselLandingpage/>
-    </div>
+    <Header />
+    <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   </>
+
   )
 }
 
-export default App
+export default App;
