@@ -653,7 +653,9 @@ nav li {
 }
 
 .seafareItem {
-  background-color: #dadada;
+  background-color: #EFEFEF;
+  border: 2px solid #2d5c88;
+  border-radius: 20px;
   padding: 20px;
   margin: 20px;
 }
@@ -675,6 +677,7 @@ nav li {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .seafareTitle {
