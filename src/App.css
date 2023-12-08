@@ -2,6 +2,8 @@ body {
   background-color: white;
   color: black;
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #root {
@@ -9,7 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   margin: 0;
 }
 
@@ -166,73 +168,71 @@ nav li {
   }
 }
 
-
 /* Footer design */
-.footer-container{
-  background-color: #6CC3C3;
+.footer-container {
+  background-color: #6cc3c3;
   height: 274px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
-.footer-container h3{
-  color: #2D5D89;
+.footer-container h3 {
+  color: #2d5d89;
 }
 
-.footer-container ul{
+.footer-container ul {
   list-style: none;
   margin: 10px;
-  
 }
-.footer-text{
+.footer-text {
   width: 700px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-container a{
+.footer-container a {
   text-decoration: none;
   color: #ffffff;
 }
-.footer-container a:hover{
-  color: #F88C51;
+.footer-container a:hover {
+  color: #f88c51;
 }
 
-.footer-img{
+.footer-img {
   width: 172px;
   position: relative;
   left: 95%;
 }
 
-.footer-bottom{
-  color: #8C8F94;
+.footer-bottom {
+  color: #8c8f94;
   text-align: center;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 1170px){
-  .footer-container{
+@media only screen and (max-width: 1170px) {
+  .footer-container {
     flex-direction: column;
     height: 400px;
   }
-  .footer-img{
+  .footer-img {
     left: 0;
     margin: 30px auto;
   }
 }
-@media only screen and (max-width: 750px){
-  .footer-container{
+@media only screen and (max-width: 750px) {
+  .footer-container {
     height: 700px;
   }
-  .footer-text{
+  .footer-text {
     flex-direction: column;
     text-align: center;
     width: auto;
   }
-  .footer-img{
+  .footer-img {
     width: 130px;
   }
 }
@@ -246,6 +246,8 @@ nav li {
   margin: 0 auto;
   padding: 5rem;
 }
+
+
 
 .crew-profiles-button {
   display: block;
@@ -377,6 +379,8 @@ nav li {
 
 #login-form {
   width: 500px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .input {
@@ -418,6 +422,237 @@ nav li {
   color: #2d5c88;
 }
 
+/*  Find Gaster side */ 
+
+.find-gast-image {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto 0;
+  align-items: center;
+  object-position: 50% 35%; 
+}
+
+.h1-on-find-gast {
+  position: absolute;
+  right: 20%;
+  left: 5%;
+  bottom: 55%;
+  font-size: 2.5rem;
+}
+
+.p-on-find-gast {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centrer tekst i forhold til container */
+  font-size: 1rem;
+  padding: 1rem;
+  width: auto;
+}
+
+
+.profiles-container .outer-profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 20px;
+}
+
+
+.profile {
+  box-sizing: border-box;
+  width: 100%; /* Juster bredden efter behov, minus margin */
+  border: 2px solid #2D5D89;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f3f3f3;
+}
+
+.profile h2 {
+  margin-bottom: 8px;
+  color: #2D5D89;
+  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.profile p {
+  margin-bottom: 4px;
+  color: black;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold; /* Tilføjet denne linje for fed skrift */
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .profiles-container .outer-profile {
+    grid-template-columns: 1fr; /* Stack profilerne på mindre skærme */
+    margin: 16px 15px;
+  }
+}
+
+
+/* Chat section */
+
+/* ChatMessage.css */
+
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.message-input {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.message-input {
+  flex-grow: 1;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  background-color: #2d5d89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #585858;
+  }
+}
+
+/* ChatMessage styles */
+
+.chat-message {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #efefef;
+  color: #2d5c88;
+  font-weight: bold;
+}
+
+.bot-message {
+  align-self: flex-end;
+  background-color: #5a7791;
+  color: #fff;
+  font-weight: bold;
+}
+
+.message-sender {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.message-text {
+  font-size: 1rem;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 767px) {
+  .chat-message {
+    padding: 8px;
+  }
+
+  .user-message,
+  .bot-message {
+    align-self: auto;
+  }
+
+  .user-message:nth-child(even),
+  .bot-message:nth-child(even) {
+    align-self: flex-end;
+  }
+}
+
+/**
+ * Tabs
+ */
+ .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.tabs label {
+  order: initial;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #f3f3f3;
+  border: 1px solid #2D5D89;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: absolute;
+    
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+.signup-form {
 .seafareItem {
   background-color: #dadada;
   padding: 20px;
@@ -461,7 +696,6 @@ nav li {
   }
 }
 
-
 /* Sign up form design Desktop*/
 
 .seafare-form {
@@ -471,6 +705,10 @@ nav li {
   border-radius: 5px;
   border: 2px solid #2D5D89;
   font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
+  color: #585858;
+  padding: 2rem;
+  border: 2px solid #2d5d89;
+  font-family: "open sans", sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
   padding: 2rem;
   margin-bottom: 30px;
@@ -491,14 +729,28 @@ nav li {
 
 .form-label {
   max-width: 80%;
-  display: block;
+
+
 }
 
-input, select {
+input {
   width: 80%;
   padding: 0.5rem;
   border: 1px solid #2D5D89;
   font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+.signup-button {
+  display: block;
+}
+
+input,
+select {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
   background-color: white;
 }
@@ -534,6 +786,21 @@ textarea {
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  margin: auto;
+
+  &:hover {
+    background-color: #585858;
+  }
+}
+
+.message-timestamp {
+  font-size: 0.8rem;
+  color: #000;
+  padding: 0.5rem;
+}
+
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   margin: 1rem 2rem 1rem 2rem;
   padding: 0.5rem 1rem;
   margin-right: auto; /* Tilføj denne linje */
@@ -544,9 +811,6 @@ textarea {
   }
 }
 
-
-
-
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   .form-grid {
@@ -556,8 +820,14 @@ textarea {
 
 .p-signup {
   font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
+}
+
+input {
+  background-color: white;
+  color: black;
 }
