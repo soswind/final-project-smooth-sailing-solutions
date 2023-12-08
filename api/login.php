@@ -1,7 +1,7 @@
 <?php
+session_start();
 include './mysql.php';
 header('Content-Type: application/json');
-session_start();
 
 // Get data from the request body
 $data = json_decode(file_get_contents('php://input'), true);
