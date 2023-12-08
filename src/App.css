@@ -159,7 +159,13 @@ p {
   border: none;
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
 }
+
 .login-button a {
   display: flex;
   background-color: white;
