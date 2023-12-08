@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function SignUpForm() {
   return (
@@ -12,7 +12,7 @@ export default function SignUpForm() {
         <div className="signup-form">
 
           
-          <form className="form-grid">
+          <form action="/api/signup.php" method="POST" className="form-grid">
             <div className="form-group">
               <label className="form-label" htmlFor="gast_first_name">FIRSTNAME</label>
               <input type="text" id="gast_first_name" name="gast_first_name" placeholder="Firstname" required />
@@ -20,42 +20,42 @@ export default function SignUpForm() {
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_last_name">LASTNAME</label>
-              <input type="text" id="gast_last_name" name="gast_last_name" placeholder="Lastname" required />
+              <input type="text" id="gast_last_name" name="gast_last_name" placeholder="Lastname" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_birthday">BIRTHDAY</label>
-              <input type="date" id="gast_birthday" name="gast_birthday" placeholder="Birthday" required />
+              <input type="date" id="gast_birthday" name="gast_birthday" placeholder="Birthday" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_profile_text">PROFILE TEXT</label>
-              <input type="text" id="gast_profile_text" name="gast_profile_text" placeholder="Write a short text about yourself" required />
+              <input type="text" id="gast_profile_text" name="gast_profile_text" placeholder="Write a short text about yourself" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_address">ADDRESS</label>
-              <input type="text" id="gast_address" name="gast_address" placeholder="Street name" required />
+              <input type="text" id="gast_address" name="gast_address" placeholder="Street name" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_city">CITY</label>
-              <input type="text" id="gast_city" name="gast_city" placeholder="New York" required />
+              <input type="text" id="gast_city" name="gast_city" placeholder="New York" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_postal_no">POSTAL NO.</label>
-              <input type="text" id="gast_postal_no" name="gast_postal_no" placeholder="888888" required />
+              <input type="text" id="gast_postal_no" name="gast_postal_no" placeholder="888888" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_phone">PHONE NO.</label>
-              <input type="text" id="gast_phone" name="gast_phone" placeholder="Phone no" required />
+              <input type="text" id="gast_phone" name="gast_phone" placeholder="Phone no" />
             </div>
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_email">EMAIL</label>
-              <input type="email" id="gast_email" name="gast_email" placeholder="example@mail.com" required />
+              <input type="email" id="gast_email" name="gast_email" placeholder="example@mail.com" />
             </div>
 
             <div className="form-group">
@@ -81,7 +81,7 @@ export default function SignUpForm() {
 
             <div className="form-group">
               <label className="form-label" htmlFor="gast_skills">SKILLS</label>
-              <input type="text" id="gast_skills" name="gast_skills" placeholder="Write your skills" required />
+              <input type="text" id="gast_skills" name="gast_skills" placeholder="Write your skills" />
             </div>
 
             <button className="signup-button" type="submit">
@@ -92,7 +92,6 @@ export default function SignUpForm() {
     <input className="checkbox-input" type="checkbox" id="gast_privacyCheckbox" name="gast_privacyCheckbox" required />
     <label className="checkbox-label" htmlFor="gast_privacyCheckbox">I accept the privacy policy</label>
   </div>
-
         
           </form>
         </div>

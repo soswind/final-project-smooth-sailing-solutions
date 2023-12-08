@@ -459,7 +459,8 @@ p {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  max-width: 5rem;
+  max-width: 7rem;
+  max-height: 1.5rem;
 }
 
 .tabtwo {
@@ -468,7 +469,8 @@ p {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  max-width: 5rem;
+  max-width: 7rem;
+  max-height: 1.5rem;
 }
 
 .tabs label {
