@@ -7,6 +7,7 @@ import Login from './login'
 import Dashboard from './Dashboard'
 import PrivateRoute from './Authenticator';
 import CaptainDashboard from './CaptainDashboard';
+import Seafares from './Seafares';
 
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
     <ProvideAuth>
     <>
     <Header />
-    <CaptainDashboard user_name="Sailor John" />
     <Routes>
+        <Route path="/seafares" element={<Seafares />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard"
-        element={<PrivateRoute element={<CaptainDashboard />} />} />
+        element={<PrivateRoute element={<CaptainDashboard user_name="Sailor John" />} />} />
     </Routes>
   </>
   </ProvideAuth>
