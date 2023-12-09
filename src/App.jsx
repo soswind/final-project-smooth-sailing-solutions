@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import './App.css'
-import Header from './Header'
 import { Routes, Route } from 'react-router-dom';
 import Header from './Header'
-import Login from './login'
+import Login from './Login'
 import Dashboard from './Dashboard'
+import SignUpForm from './Signup';
 
 
 
@@ -15,6 +14,7 @@ function App() {
     <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/signup" element={<SignUpForm />} />
     </Routes>
   </>
 
