@@ -19,7 +19,7 @@ function App() {
         <Route path="/seafares" element={<Seafares />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard"
-        element={<PrivateRoute element={<CaptainDashboard user_name="Sailor John" />} />} />
+        element={<CaptainDashboard user_name="Sailor John" />} />
     </Routes>
   </>
   </ProvideAuth>

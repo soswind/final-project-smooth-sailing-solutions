@@ -1,9 +1,9 @@
-import DashboardSeafare from "./DashboardSeafare"
 import DashboardCrew from "./DashboardCrew"
 import messages from './images/messages.png'
 import seafare_requests from './images/seafare_requests.png'
 import find_crew from './images/find_crew.png'
 import update_seafares from './images/update_seafares.png'
+import DashboardSeafares from './DashboardSeafares'
 
 export default function CaptainDashboard(props) {
     return(
@@ -31,9 +31,7 @@ export default function CaptainDashboard(props) {
             <div>
             <section id="seafares">
                 <h4>Upcoming seafares</h4>
-                <DashboardSeafare seafare_name="Selgtogt. 27" start_date="03.12.2023" end_date="15.01.2024" />
-                <DashboardSeafare seafare_name="Selgtogt. 27" start_date="03.12.2023" end_date="15.01.2024" />
-                <DashboardSeafare seafare_name="Selgtogt. 27" start_date="03.12.2023" end_date="15.01.2024" />
+                <DashboardSeafares />
                 <h5 className="viewmore">View More</h5>
             </section>
             </div>
