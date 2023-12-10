@@ -10,7 +10,7 @@ const DashboardSeafareItem = ({ data }) => {
   return (
       <div>
           {data.map(item => (
-              <section className="seafare">
+              <section className="DashboardSeafareItem">
                 <img src={globe} /><p>{item.title}</p> <p>D. {item.start_date} - {item.end_date}</p>
               </section>
           ))}

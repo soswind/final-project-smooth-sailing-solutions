@@ -29,7 +29,7 @@ export default function CaptainDashboard(props) {
             </section>
             </div>
             <div>
-            <section id="seafares">
+            <section id="dashboardSeafares">
                 <h4>Upcoming seafares</h4>
                 <DashboardSeafares />
                 <h5 className="viewmore">View More</h5>
