@@ -1,6 +1,7 @@
 @import url("App.css");
 @import url("./components/styles/header.css");
 @import url("./components/styles/splashscreen.css");
+@import url("./components/styles/seafares.css");
 
 * {
   margin: 0;

@@ -8,7 +8,7 @@ import Header from './components/Header'
 import Economy from './economy'
 import PrivateRoute from './components/Authenticator';
 import CaptainDashboard from './CaptainDashboard';
-import Seafares from './Seafares';
+import Seafares from './components/Seafares';
 import SignUpForm from './components/Signup';
 import Landingpage from './components/Landingpage';
 import NavbarBottom from './components/NavbarBottom';

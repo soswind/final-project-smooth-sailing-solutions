@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SeafareItem from './components/SeafareItem';
+import SeafareItem from './SeafareItem';
 
 const Seafares = () => {
   const [data, setData] = useState([]);
