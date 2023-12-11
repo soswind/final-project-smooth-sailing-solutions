@@ -3,6 +3,7 @@ import { ProvideAuth } from './login';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from './Header'
+import Economy from './economy'
 import Login from './login'
 import Dashboard from './Dashboard'
 import PrivateRoute from './Authenticator';
@@ -28,8 +29,6 @@ function App() {
     <Splashscreen />
     <Landingpage />
     <NavbarBottom />
-
-
   </>
   </ProvideAuth>
 
