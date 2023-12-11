@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import React from "react";
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom'
+import './styles.css'
 
-import SignUpForm from '../Signup'
+import Header from "./components/Header.jsx";
+import SignUpForm from "./components/Signup.jsx";
+import NavbarBottom from "./components/NavbarBottom.jsx";
 
-
-function App() {
-    const [count, setCount] = useState(0)
-  
-    return (
-      <>
-    <div>
-      <SignUpForm />
-    </div>
-
-        </>
-    )
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <Header />
+    <SignUpForm />
+    <NavbarBottom />
+    </BrowserRouter>
+  </React.StrictMode>,
+)
