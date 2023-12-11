@@ -10,9 +10,7 @@ export default function Navbar() {
                 <li><a href="/">Good To Know</a></li>
                 <li><a href="/">Sign Up</a></li>
             </ul>
-            <ul>
-                <li><a className="login-button" href="/login">Login</a></li>
-            </ul>
+            <a className="login-button" href="/login">Login</a>
         </nav>
     
     )

@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import './index.css'
 import { BrowserRouter } from 'react-router-dom'
-import './App.css'
+import './styles.css'
 
 import Header from "./components/Header.jsx";
 import Splashscreen from "./components/Splashscreen.jsx";

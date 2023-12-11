@@ -29,15 +29,6 @@ p {
   padding: 0.5rem;
 }
 
-/* NavbarTop section with image & paragraph text */
-.navtop-img {
-  display: flex;
-  width: 100px;
-  height: auto;
-  margin: 0 auto;
-  padding: 0.8rem;
-}
-
 .left {
   display: flex;
   gap: 20px;
@@ -50,74 +41,7 @@ p {
   font-weight: 500;
 }
 
-.navtop-text {
-  display: flex;
-  justify-content: center;
-  font-size: 0.6rem;
-  font-weight: 500;
-  color: #585858;
-  margin: 0 auto;
-  padding-top: 0.3rem;
-  padding-bottom: 1.5rem;
-}
-
-
 /* Navbar menu design */
-
-
-.desktop-nav {
-  display: flex;
-  list-style: none;
-  margin: 0 1rem;
-}
-
-.desktop-nav {
-  display: flex;
-  gap: 200px;
-  align-items: center;
-  background-color: #2d5d89;
-  padding: 1rem;
-  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  max-height: 20px;
-}
-
-/* Navbar links design */
-
-
-.desktop-nav li {
-  margin: 0 1rem; 
-  list-style: none;
-  justify-content: space-between;
-  text-decoration: none;
-}
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links li a {
-  text-decoration: none;
-
-  &:hover {
-    color: #f88c50;
-  }
-}
-
-/* Login button design */
-.login-button {
-  background-color: white;
-  border-radius: 5px;
-  padding: 2px 15px;
-}
-
-.login-button {
-  color: #2d5d89;
-
-  &:hover {
-    color: #dedede;
-  }
-}
 
 /* Header section with image & paragraph text */
 .header-image {
@@ -159,7 +83,7 @@ p {
   margin: 0 auto;
   border: none;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 
   &:hover {
     background-color: #585858;
@@ -259,8 +183,6 @@ p {
   padding: 5rem;
 }
 
-
-
 .crew-profiles-button {
   display: block;
   font-size: 1.2rem;
@@ -314,8 +236,7 @@ p {
   margin: 0 auto;
   line-height: 1.5;
   padding-bottom: 2rem;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
-
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .captain-ul-landingpage {
@@ -325,12 +246,10 @@ p {
   margin: 0 auto;
   line-height: 1.5;
   padding-bottom: 2rem;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
-
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 /*section with text in image */
-
 
 .section-image {
   position: relative;
@@ -365,7 +284,7 @@ p {
 .paragraph-in-image {
   font-size: 1rem;
   margin-top: 1rem; /* Tilføj et mellemrum over paragraph-teksten */
-  color: #585858
+  color: #585858;
 }
 
 .long-distance-button {
@@ -377,7 +296,7 @@ p {
   margin-bottom: 4rem; /* Tilføj et mellemrum over knappen */
   border: none;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 
   &:hover {
     background-color: #585858;
@@ -420,49 +339,8 @@ p {
   }
 }
 
-
-
-  
 .read-the-docs {
   color: #888;
-}
-
-.mobile-nav {
-  background-color: #2d5d89;
-  padding: 20px;
-  margin-top: -20px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.mobile-nav-links {
-  padding-left: 0px;
-}
-
-.mobile-nav-links li {
-  margin-bottom: 10px;
-}
-
-.mobile-nav a {
-  color: white;
-}
-
-.mobile-login-button {
-  background-color: #fff;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.mobile-login-button a {
-  color: #2d5d89;
-}
-
-.mobile-nav-bar {
-  background-color: #2d5d89;
-  padding: 20px 40px;
-  box-sizing: border-box;
-  margin-bottom: 0px;
-  text-align: right;
 }
 
 #login-form {
@@ -521,7 +399,8 @@ p {
   border-radius: 0px;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
@@ -534,7 +413,7 @@ p {
 }
 
 .accordion::after {
-  content: '\02795';
+  content: "\02795";
   font-size: 13px;
   color: #777;
   float: right;
@@ -554,7 +433,7 @@ p {
 /**
  * Tabs
  */
- .tabs {
+.tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -612,9 +491,8 @@ p {
 }
 
 .checkbox-label {
-  font-family: 'Open Sans', sans-serif; /* Specify the font family as needed */
+  font-family: "Open Sans", sans-serif; /* Specify the font family as needed */
 }
-
 
 .tabs input[type="radio"] {
   display: none;
@@ -622,7 +500,7 @@ p {
 
 .tabs input[type="radio"]:checked + label {
   background: #f3f3f3;
-  border: 1px solid #2D5D89;
+  border: 1px solid #2d5d89;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -633,7 +511,6 @@ p {
   .tabs .tab,
   .tabs label {
     order: absolute;
-    
   }
 
   .tabs label {
@@ -648,12 +525,11 @@ p {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
-  border: 2px solid #2D5D89;
-  font-family: 'open sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 2px solid #2d5d89;
+  font-family: "open sans", sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
   padding: 2rem;
 }
-
 
 .form-grid {
   display: grid;
@@ -674,8 +550,8 @@ p {
 input {
   width: 80%;
   padding: 0.5rem;
-  border: 1px solid #2D5D89;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 1px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
   background-color: white;
 }
@@ -686,7 +562,7 @@ input {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 1rem 2rem 2rem 2rem;
   padding: 0.5rem 1rem;
@@ -698,7 +574,6 @@ input {
   }
 }
 
-
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   .form-grid {
@@ -707,15 +582,14 @@ input {
 }
 
 .p-signup {
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
 }
 
-
-/*  Find Gaster side */ 
+/*  Find Gaster side */
 
 .find-gast-image {
   display: block;
@@ -724,7 +598,7 @@ input {
   object-fit: cover;
   margin: auto 0;
   align-items: center;
-  object-position: 50% 35%; 
+  object-position: 50% 35%;
 }
 
 .h1-on-find-gast {
@@ -744,7 +618,6 @@ input {
   width: auto;
 }
 
-
 .profiles-container .outer-profile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -752,11 +625,10 @@ input {
   gap: 20px;
 }
 
-
 .profile {
   box-sizing: border-box;
   width: 100%; /* Juster bredden efter behov, minus margin */
-  border: 2px solid #2D5D89;
+  border: 2px solid #2d5d89;
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0;
@@ -765,19 +637,18 @@ input {
 
 .profile h2 {
   margin-bottom: 8px;
-  color: #2D5D89;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  color: #2d5d89;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
 
 .profile p {
   margin-bottom: 4px;
   color: black;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold; /* Tilføjet denne linje for fed skrift */
 }
-
 
 @media screen and (max-width: 767px) {
   .profiles-container .outer-profile {
@@ -786,11 +657,9 @@ input {
   }
 }
 
-
 /* Chat section */
 
 /* ChatMessage.css */
-
 
 .chat {
   display: flex;
@@ -860,7 +729,7 @@ input {
 
 .message-sender {
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin: 0.5rem;
 }
@@ -889,7 +758,7 @@ input {
 /**
  * Tabs
  */
- .tabs {
+.tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -904,7 +773,7 @@ input {
   padding: 2rem;
   max-width: 7rem;
   max-height: 1.5rem;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .tabtwo {
@@ -915,7 +784,7 @@ input {
   padding: 2rem;
   max-width: 7rem;
   max-height: 1.5rem;
-  font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .tabs label {
@@ -943,7 +812,7 @@ input {
 
 .tabs input[type="radio"]:checked + label {
   background: #f3f3f3;
-  border: 1px solid #2D5D89;
+  border: 1px solid #2d5d89;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -954,7 +823,6 @@ input {
   .tabs .tab,
   .tabs label {
     order: absolute;
-    
   }
 
   .tabs label {
@@ -964,9 +832,8 @@ input {
   }
 }
 
-
 .seafareItem {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border: 2px solid #2d5c88;
   border-radius: 20px;
 }
@@ -1022,8 +889,8 @@ input {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
-  border: 2px solid #2D5D89;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 2px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   color: #585858;
   padding: 2rem;
   margin-bottom: 30px;
@@ -1044,15 +911,13 @@ input {
 
 .form-label {
   max-width: 80%;
-
-
 }
 
 input {
   width: 80%;
   padding: 0.5rem;
-  border: 1px solid #2D5D89;
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  border: 1px solid #2d5d89;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
 }
 
@@ -1136,7 +1001,7 @@ textarea {
 }
 
 .p-signup {
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 1rem;
