@@ -4,6 +4,9 @@ import Header from './Header'
 import Login from './login'
 import Dashboard from './Dashboard'
 import SignUpForm from './Signup';
+import Splashscreen from '../Splashscreen';
+import Landingpage from '../Landingpage';
+import NavbarBottom from './NavbarBottom';
 
 
 
@@ -16,6 +19,11 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/signup" element={<SignUpForm />} />
     </Routes>
+    <Splashscreen />
+    <Landingpage />
+    <NavbarBottom />
+
+
   </>
 
   )

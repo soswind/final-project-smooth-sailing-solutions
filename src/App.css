@@ -307,46 +307,120 @@ p {
   }
 }
 
+.land-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+
+}
+
+.captain-ul-landingpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+
+}
+
+/*section with text in image */
+
+
 .section-image {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.section-image img {
+  width: 100%;
   object-fit: cover;
+  object-position: 50% 35%;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%; /* Juster bredden efter behov */
+  max-width: 800px; /* Sæt en maksimum bredde */
+  margin: 0 auto; /* Center containeren inden for billedet */
 }
 
 .h2-in-image {
-  position: relative;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .paragraph-in-image {
-  position: relative;
-  text-align: center;
   font-size: 1rem;
-  padding: 2px 20px;
+  margin-top: 1rem; /* Tilføj et mellemrum over paragraph-teksten */
+  color: #585858
 }
 
 .long-distance-button {
-  position: relative;
-  display: block;
   font-size: 1.2rem;
   background-color: #f88c50;
   color: #fff;
   border-radius: 5px;
   padding: 0.5rem 1rem;
-  margin: 0 auto 2rem;
+  margin-bottom: 4rem; /* Tilføj et mellemrum over knappen */
   border: none;
   cursor: pointer;
   font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
 
-
   &:hover {
     background-color: #585858;
-    color: #fff;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    width: 90%;
+  }
+
+  .h2-in-image {
+    font-size: 2rem;
+  }
+
+  .paragraph-in-image {
+    font-size: 0.9rem;
+  }
+
+  .long-distance-button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    width: 100%;
+  }
+
+  .h2-in-image {
+    font-size: 1.5rem;
+  }
+
+  .paragraph-in-image {
+    font-size: 0.8rem;
+  }
+
+  .long-distance-button {
+    font-size: 0.9rem;
+  }
+}
+
+
 
   
 .read-the-docs {
