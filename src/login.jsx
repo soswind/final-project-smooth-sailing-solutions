@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css'
+
+export const AuthContext = React.createContext();
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const nav = useNavigate();
+
+    const authContext = useContext(AuthContext);
     
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,6 +26,7 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
+                authContext.setAuthenticated(true);
                 nav('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
@@ -50,4 +55,19 @@ function Login() {
     )
 }
 
-export default Login;
+export default Login
+
+export const ProvideAuth = ({ children }) => {
+    const [authenticated, setAuthenticated] = useState(false);
+
+    const contextValue = {
+        authenticated,
+        setAuthenticated,
+    };
+
+    return (
+        <AuthContext.Provider value={contextValue}>
+            {children}
+        </AuthContext.Provider>
+    );
+};

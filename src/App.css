@@ -1089,3 +1089,103 @@ input {
   background-color: white;
   color: black;
 }
+
+.dashboard_title {
+  background-color: #c9c9c9;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard_title h3:first-child {
+  color: #585858;
+}
+
+.dashboard_title h3 {
+  color: #2d5c88;
+  margin: 0px;
+}
+
+.dash {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 50px 100px;
+  gap: 50px;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+#options div {
+  margin-bottom: 20px;
+}
+
+.dashboard_option {
+  background-color: #2d5c88;
+  color: white;
+  width: 120px;
+  height: 120px;
+  color: white;
+  display: block;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+}
+
+#dashboardSeafares {
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+#dashboardSeafares h4 {
+  color: #585858;
+  margin: 0 20px;
+}
+
+.DashboardSeafareItem {
+  background-color: #6cc3c3;
+  color: #2d5c88;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: center;
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.DashboardSeafareItem img {
+  width: 50px;
+  height: 50px;
+}
+
+.DashboardSeafareItem p {
+  color: #000000;
+}
+
+.viewmore {
+  color: #f88c50;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#former_crew {
+  background-color: #e6e6e6;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+#former_crew h4 {
+  margin: 0 20px;
+}
+
+.crew_member {
+  background-color: #6cc3c3;
+  color: #2d5c88;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
