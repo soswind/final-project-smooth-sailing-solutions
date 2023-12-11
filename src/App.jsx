@@ -3,6 +3,9 @@ import { ProvideAuth } from './login';
 import { Routes, Route } from 'react-router-dom';
 import Login from './login'
 import Dashboard from './Dashboard'
+import FindGaster from './FindGaster';
+import Login from './login'
+import Dashboard from './Dashboard'
 import Seafares from './Seafares'
 import './App.css'
 import Header from './Header'
@@ -22,6 +25,7 @@ function App() {
   return (
     <ProvideAuth>
     <>
+    
     <Header />
     <Seafares />
     <Routes>
@@ -30,9 +34,6 @@ function App() {
         <Route path="/dashboard"
         element={<CaptainDashboard user_name="Sailor John" />} />
     </Routes>
-    <Splashscreen />
-    <Landingpage />
-    <NavbarBottom />
   </>
   </ProvideAuth>
 
