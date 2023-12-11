@@ -5,7 +5,7 @@ import './styles.css'
 
 import Header from "./components/Header.jsx";
 import Splashscreen from "./components/Splashscreen.jsx";
-import Landingpage from "./Landingpage.jsx";
+import Landingpage from "./components/Landingpage.jsx";
 import NavbarBottom from "./components/NavbarBottom.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(

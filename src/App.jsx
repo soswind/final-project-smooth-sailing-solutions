@@ -10,7 +10,7 @@ import PrivateRoute from './components/Authenticator';
 import CaptainDashboard from './CaptainDashboard';
 import Seafares from './Seafares';
 import SignUpForm from './components/Signup';
-import Landingpage from './Landingpage';
+import Landingpage from './components/Landingpage';
 import NavbarBottom from './components/NavbarBottom';
 
 
