@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import SeafareItem from './SeafareItem';
+import DashboardSeafareItem from "./DashboardSeafareItem";
+import { useState, useEffect } from "react";
 
-const Seafares = () => {
+const DashboardSeafares = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/api/seafares.php')
+    fetch('/api/dashboard.php')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -23,10 +23,9 @@ const Seafares = () => {
 
   return (
     <div className="DashboardSeafareItems">
-      <SeafareItem data={data} />
+      <DashboardSeafareItem data={data} />
     </div>
   )
 }
 
-
-export default Seafares;
+export default DashboardSeafares;
