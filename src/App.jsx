@@ -8,6 +8,10 @@ import Dashboard from './Dashboard'
 import PrivateRoute from './Authenticator';
 import CaptainDashboard from './CaptainDashboard';
 import Seafares from './Seafares';
+import SignUpForm from './Signup';
+import Splashscreen from '../Splashscreen';
+import Landingpage from '../Landingpage';
+import NavbarBottom from './NavbarBottom';
 
 
 function App() {
@@ -21,19 +25,15 @@ function App() {
         <Route path="/dashboard"
         element={<CaptainDashboard user_name="Sailor John" />} />
     </Routes>
+    <Splashscreen />
+    <Landingpage />
+    <NavbarBottom />
+
+
   </>
   </ProvideAuth>
 
   )
 }
 
-/* const PrivateRoute = ({ children }) => {
-  const authContext = useContext(AuthContext);
-
-  return authContext.authenticated ? children : <Navigate to="/login"/>;
-
-} */
-
-// Use navigate istedet for router
-
-export default App
+export default App;
