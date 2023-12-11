@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Header() {
+export default function Splashscreen() {
     return (
     <section>
     <img src="../src/images/header-image.png" className="header-image"></img>
