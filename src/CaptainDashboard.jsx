@@ -1,9 +1,9 @@
-import DashboardCrew from "./DashboardCrew"
+import DashboardCrew from "./components/DashboardCrew"
 import messages from './images/messages.png'
 import seafare_requests from './images/seafare_requests.png'
 import find_crew from './images/find_crew.png'
 import update_seafares from './images/update_seafares.png'
-import DashboardSeafares from './DashboardSeafares'
+import DashboardSeafares from './components/DashboardSeafares'
 
 export default function CaptainDashboard(props) {
     return(

@@ -1,4 +1,4 @@
-import globe from './images/globe.png'
+import globe from '../images/globe.png'
  /*
 export default function DashboardSeafare(props) {
   return (<section className="seafare">

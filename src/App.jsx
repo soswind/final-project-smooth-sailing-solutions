@@ -2,23 +2,16 @@ import React, { useContext } from 'react';
 import { ProvideAuth } from './login';
 import { Routes, Route } from 'react-router-dom';
 import Login from './login'
-import Dashboard from './Dashboard'
 import FindGaster from './FindGaster';
-import Login from './login'
-import Dashboard from './Dashboard'
-import Seafares from './Seafares'
 import './App.css'
-import Header from './Header'
+import Header from './components/Header'
 import Economy from './economy'
-import Login from './login'
-import Dashboard from './Dashboard'
-import PrivateRoute from './Authenticator';
+import PrivateRoute from './components/Authenticator';
 import CaptainDashboard from './CaptainDashboard';
 import Seafares from './Seafares';
-import SignUpForm from './Signup';
-import Splashscreen from '../Splashscreen';
-import Landingpage from '../Landingpage';
-import NavbarBottom from './NavbarBottom';
+import SignUpForm from './components/Signup';
+import Landingpage from './Landingpage';
+import NavbarBottom from './components/NavbarBottom';
 
 
 function App() {

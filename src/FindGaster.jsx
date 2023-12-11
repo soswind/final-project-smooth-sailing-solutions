@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Profile from './Profile';
+import Profile from './components/Profile';
 
 export default function FindGaster() {
   const [data, setData] = useState([]);

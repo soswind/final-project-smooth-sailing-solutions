@@ -1,6 +1,6 @@
-import './App.css';
-import burgerMenu from './images/burger-menu.png'
-import closeMenu from './images/menu-close.png'
+
+import burgerMenu from '../images/burger-menu.png'
+import closeMenu from '../images/menu-close.png'
 import React, { useState } from 'react';
 
 function MobileMenu() {
