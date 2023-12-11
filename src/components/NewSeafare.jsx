@@ -60,7 +60,7 @@ export default function NewSeafare() {
     <label className="form-label" htmlFor="price">Price:</label>
     <input className="single" type="number" name="price" id="price" placeholder="Prices listed in DKK"/>
 
-<button className="button button--small" type="submit">Submit</button>
+<button className="form-button" type="submit">Submit</button>
     
     </form>
     </>

@@ -2,6 +2,7 @@
 @import url("./components/styles/header.css");
 @import url("./components/styles/splashscreen.css");
 @import url("./components/styles/seafares.css");
+@import url("./components/styles/forms.css");
 
 * {
   margin: 0;
