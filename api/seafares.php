@@ -6,7 +6,7 @@ if (!$mySQL) {
     die('Database connection error: ' . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM seafares";
+$query = "SELECT * FROM seafares_view";
 $result = mysqli_query($mySQL, $query);
 
 if (!$result) {

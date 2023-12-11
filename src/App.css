@@ -964,6 +964,13 @@ input {
   }
 }
 
+
+.seafareItem {
+  background-color: #EFEFEF;
+  border: 2px solid #2d5c88;
+  border-radius: 20px;
+}
+
 .seafare-form {
   background-color: #dadada;
   padding: 20px;
@@ -987,6 +994,7 @@ input {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .seafareTitle {
@@ -1105,6 +1113,19 @@ textarea {
   font-size: 0.8rem;
   color: #000;
   padding: 0.5rem;
+}
+
+.signup-form {
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Tilføj denne linje */
+
+  &:hover {
+    background-color: #585858;
+    color: #fff;
+  }
 }
 
 /* Media query for smaller screens */

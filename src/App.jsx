@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { ProvideAuth } from './login';
 import { Routes, Route } from 'react-router-dom';
+import Login from './login'
+import Dashboard from './Dashboard'
+import Seafares from './Seafares'
 import './App.css'
 import Header from './Header'
 import Economy from './economy'
@@ -20,6 +23,7 @@ function App() {
     <ProvideAuth>
     <>
     <Header />
+    <Seafares />
     <Routes>
         <Route path="/seafares" element={<Seafares />} />
         <Route path="/login" element={<Login />} />
