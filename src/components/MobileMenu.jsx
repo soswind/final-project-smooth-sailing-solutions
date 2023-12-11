@@ -18,11 +18,11 @@ function MobileMenu() {
     {isOpen && (
       <nav className='mobile-nav'>
       <ul className="mobile-nav-links">
-          <li><a href="/">All Seafares</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Good To Know</a></li>
-          <li><a href="/">Sign Up</a></li>
-          <li className="mobile-login-button"><a href="/login">Login</a></li>
+          <li><a href="/seafares.html">All Seafares</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/info.html">Good To Know</a></li>
+          <li><a href="/signup.html">Sign Up</a></li>
+          <li className="mobile-login-button"><a href="/login.html">Login</a></li>
       </ul>
   </nav>
     )}

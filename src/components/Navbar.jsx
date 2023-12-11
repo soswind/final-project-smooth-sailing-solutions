@@ -5,12 +5,12 @@ export default function Navbar() {
     return (
         <nav className="desktop-nav">
             <ul className="nav-links">
-                <li><a href="/seafares">All Seafares</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Good To Know</a></li>
-                <li><a href="/">Sign Up</a></li>
+                <li><a href="/seafares.html">All Seafares</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/info.html">Good To Know</a></li>
+                <li><a href="/signup.html">Sign Up</a></li>
             </ul>
-            <a className="login-button" href="/login">Login</a>
+            <a className="login-button" href="/login.html">Login</a>
         </nav>
     
     )
