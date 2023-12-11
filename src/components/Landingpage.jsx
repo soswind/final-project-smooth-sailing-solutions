@@ -1,4 +1,5 @@
 import React from "react"
+import Accordion from "./Accordion";
 
 
 export default function Landingpage() {
@@ -17,7 +18,7 @@ export default function Landingpage() {
                 <li>Explore the crew profiles, and make your own choice of exactly who fits your wishes and requirements for the cruises.</li>
                 <li>Give the crew a serious overview of scopes and activities on your cruises.</li>
             </ul>
-            <button className="crew-profiles-button" type="button">Browse crew profiles</button></div>
+            <a className="button-link" href="/findcrew.hmtl"><button className="crew-profiles-button" type="button">Browse crew profiles</button></a></div>
             </section>
            <section className="captainprofiles">
             <img className="fordaek-image" src="../src/images/fordaek-bog.png"></img>
@@ -41,11 +42,17 @@ export default function Landingpage() {
             <p className="paragraph-in-image">Before you set of on a cruise, it's a good idea to long-distance sailing. Whether you are used to acting as a guest or a captain on a sailboat or not, it is good
                 to know which rules and conditions apply before and during long-distance sailing and sailing trips in general.
             </p>
-            <button className="long-distance-button" type="button">SailMores guide to long-distance sailing</button>
+            <a className="button-link" href="/about.html"><button className="long-distance-button" type="button">SailMores guide to long-distance sailing</button></a>
             </div>
+            
             
             </div>
             
+
+            <Accordion title="An active form of holiday..." description={
+                <div><p>Guests and captains on long-distance sailings and other cruises are always busy. Sailing involves both navigation and helmsmen, as well as maintenance of the boat. During a sailing trip, there is fishing, diving, paddling and exploring. And even if the boat is stationary, you don't necessarily.</p>
+                <p>Take a sailing trip if you want an active holiday where you get to see more than just the hotel's swimming pool. </p></div>}/>
+        
         </>
         
     )
