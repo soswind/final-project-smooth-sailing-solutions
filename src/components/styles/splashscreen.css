@@ -7,7 +7,7 @@
   object-fit: cover;
   width: 100%;
   position: relative;
-  max-height: 500px;
+  max-height: 600px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
@@ -53,14 +53,14 @@
 @media screen and (min-width: 1150px) {
   .content-container-header {
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 20%;
     transform: translate(-50%, -50%);
     margin-left: 30px;
   }
 
   .title-header {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .paragraph-header {
@@ -68,7 +68,7 @@
   }
 
   .header-button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
 }
@@ -76,21 +76,21 @@
 @media screen and (min-width: 1750px) {
   .content-container-header {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 20%;
     transform: translate(-50%, -50%);
   }
 
   .title-header {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .paragraph-header {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .header-button {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

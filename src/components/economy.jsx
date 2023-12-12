@@ -3,9 +3,17 @@ import Accordion from "./Accordion"
 export default function Economy() {
   return (
     <>
-      <h2>Få et overblik over udgifterne og vilkårene på sejltogter</h2>
-      <p>Langturssejlads er en unik og rimeligt billig rejseform, som på ingen måde kan sammenlignes med pakkerejser eller charterferier. Man er i højere grad selv ansvarlig for at tilrettelægge rejsen, og og under sejladsen skal man være forberedt på uforudsete hændelser, da man som sømand er i naturens vold. Derfor har vi lavet en liste over økonomiske og sikkerhedsmæssige vilkår på en langturssejlads, så du bliver godt forberedt til dit sejlereventyr.</p>
-      <h2>Helt overordnet om ansvarsfordelingen og sikkerheden på sejltogter</h2>
+      <h1 className="info-h1">Få et overblik over udgifterne og vilkårene på sejltogter</h1>
+
+      <div className="info-p">
+      <p>Langturssejlads er en unik og rimeligt billig rejseform, som på ingen måde kan sammenlignes med pakkerejser eller charterferier. </p>
+      <p>Man er i højere grad selv ansvarlig for at tilrettelægge rejsen, og og under sejladsen skal man være forberedt på uforudsete hændelser, da man som sømand er i naturens vold. </p>
+      <p>Derfor har vi lavet en liste over økonomiske og sikkerhedsmæssige vilkår på en langturssejlads, så du bliver godt forberedt til dit sejlereventyr.</p>
+      </div>
+
+       
+      <h2 className="info-h2">Helt overordnet om ansvarsfordelingen og sikkerheden på sejltogter</h2>
+      
       <Accordion title="Ansvar" description={
       <ul>
         <li>SailMore er alene facilitator, og formidler kun salg af køjepladser mellem køber og leverandør – altså mellem dig og skipperen.</li>

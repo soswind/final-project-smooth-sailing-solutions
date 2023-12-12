@@ -1,5 +1,5 @@
 import React from "react";
-import "./GastProfile.css";
+import GastProfile from "./GastProfile";
 
 function GastProfile() {
     return (

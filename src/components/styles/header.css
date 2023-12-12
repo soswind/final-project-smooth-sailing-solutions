@@ -10,6 +10,7 @@
 .navtop-text {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 0.6rem;
   font-weight: 500;
   color: #585858;

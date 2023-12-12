@@ -9,7 +9,7 @@ export default function Accordion(props) {
   return (
     <>
       <button className={`accordion ${isOpen ? 'active' : ''}`} onClick={handleOpen}>{props.title}</button>
-      <div class={`accordion_panel ${isOpen ? 'active' : ''}`}>
+      <div className={`accordion_panel ${isOpen ? 'active' : ''}`}>
         {props.description}
       </div>
     </>
