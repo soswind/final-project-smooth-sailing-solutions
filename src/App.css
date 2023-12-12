@@ -74,6 +74,9 @@ p {
   list-style: none;
   margin: 10px;
 }
+.footer-container ul li {
+  color: #ffffff;
+}
 .footer-text {
   width: 700px;
   margin: 0 auto;
