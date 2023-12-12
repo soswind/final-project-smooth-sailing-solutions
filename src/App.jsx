@@ -26,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard"
         element={<CaptainDashboard user_name="Sailor John" />} />
+        <Route path="/signup" element={<SignUpForm />} />
     </Routes>
   </>
   </ProvideAuth>

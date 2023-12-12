@@ -39,7 +39,7 @@ export default function SignUpForm() {
         // Logger data til konsollen ved succes
         console.log("Success:", data);
         // Navigerer til login-siden efter vellykket oprettelse af profil
-        nav('/login');
+        nav('/login.html');
       })
       .catch((error) => {
         // Logger fejl til konsollen ved fejl
