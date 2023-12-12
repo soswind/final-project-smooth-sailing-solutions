@@ -1,10 +1,18 @@
 /*----- PROFILE -----*/
 .skipperprofile{
-    width: 375px;
+    width: 350px;
     margin: 0 auto;
+    overflow: hidden;
+}
+.skipperProfileHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 .skipperName{
     font-size: 25px;
+    margin-top: 20px;
     margin-right: 10px;
     padding: 0;
     color: #2D5D89;
@@ -12,67 +20,33 @@
     text-transform: uppercase;
 }
 .profileType-skipper{
-    position: relative;
-    float: right;
-    top: -60px;
-    right: 40px;
+    margin-top: 20px;
     font-size: 20px;
-    margin: 0;
     padding: 0;
     color: #707070;
     font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+}
+.skipperProfileText{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 70px;
+    overflow: hidden;
 }
 .skipperAge, .skipperExperience, .skipperArea{
     color: #2D5D89;
     font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
-.skipperAge{
-    position: relative;
-    float: right;
-    right: 90px;
-    top: 5%;
-}
-
-.skipperExperience{
-    position: relative;
-    float: right;
-    right: -55px;
-    top: 70px;
-}
-.skipperArea{
-    position: relative;
-    float: right;
-    right: 110px;
-    top: 80px;
-}
 
 .skipperAgeYear, .skipperExperienceYears, .skipperAreaName{
     color: #707070;
 }
-.skipperAgeYear{
-    position: relative;
-    float: right;
-    right: 30px;
-    top: 20px;
-}
-.skipperExperienceYears{
-    position: relative;
-    float: right;
-    right: -115px;
-    top: 90px;
-}
-.skipperAreaName{
-    position: relative;
-    float: right;
-    right: 60px;
-    top: 100px;
-}
 
 .skipper-img{
-    position: absolute;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     width: 150px;
     max-height: 150px;
     object-fit: cover;
@@ -82,12 +56,18 @@
 }
 
 /*----- BUTTONS -----*/
+.skipperProfileButton{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
 
 .sendChat{
-    position: relative;
-    top: 120px;
     width: 290px;
     height: 50px;
+    border-radius: 10px;
     font-size: 18px;
     color: #FEFEFE;
     text-transform: uppercase;
@@ -95,10 +75,9 @@
     background-color: #2D5D89;
 }
 .requestNo{
-    position: relative;
-    top: 125px;
     width: 290px;
     height: 50px;
+    border-radius: 10px;
     font-size: 18px;
     color: #FEFEFE;
     text-transform: uppercase;
@@ -108,34 +87,41 @@
 /*----- SEA FAIRIES COMPLETED-----*/
 
 .skipperCompleted{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 130px;
+    margin: 0 auto;
+    padding: 10px;
     background-color: #EFEFEF;
-    height: 100px;
-    position: relative;
-    top: 150px;
+    overflow: hidden;
 }
 .skipperCompleted h2{
     color: #2D5D89;
     font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 0;
-    padding: 20px 0 0 120px;
+    width: 340px;
+    margin: 0 auto;
+    justify-content: left;
+
 }
 .skipperCompleted p{
     color: #6CC3C3;
     font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 0;
-    padding: 0 0 0 120px;
+    width: 340px;
+    margin: 0 auto;
+    justify-content: left;
 }
 /*----- SEA FAIRIES PLANNED-----*/
 
 .skipperPlanned{
-    min-height: 680px;
-    position: relative;
-    top: 130px;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .skipperPlanned h2{
@@ -143,12 +129,19 @@
     font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-    position: relative;
-    left: 110px;
+    width: 340px;
+    margin: 0 auto;
+    justify-content: left;
+    padding: 10px;
 }
+.skipperPlannedText{
+    width: 340px;
+    margin: 0 auto;
+}
+
 .planned1{
     background-color: #6CC3C3;
-    width: 285px;
+    width: 300px;
     padding: 25px;
     border-radius: 10px;
     margin: 0 auto;
@@ -156,16 +149,19 @@
 
 .planned2{
     background-color: #2D5D89;
-    width: 285px;
+    width: 300px;
     padding: 25px;
     border-radius: 10px;
     margin: 10px auto;
 }
+
 .skipperSeeMore{
-    color:#F88C51;
-    text-transform: uppercase;
     float: right;
-    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color:#F88C51;
+    font-family: 'Archivo Narrow', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .skipperSeeMore:hover{
