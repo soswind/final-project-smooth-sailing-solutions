@@ -201,11 +201,11 @@ a {
   max-width: 7rem;
 }
 
+
 .tabs label {
   order: initial;
   display: flex;
-  padding: 2rem 2.3rem;
-  margin-right: 0.2rem;
+  padding: 2rem 1rem;
   cursor: pointer;
   background: #dedede;
   font-weight: bold;
@@ -231,7 +231,7 @@ a {
 
 .checkbox-input {
   max-width: 1rem;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .checkbox-label {
@@ -260,13 +260,12 @@ a {
   .tabs label {
     width: 100%;
     margin-right: 0;
-    margin-top: 0.2rem;
   }
+
 }
 
 .signup-form {
   display: block; /* Sign up form design Desktop*/
-  max-width: 800px;
   margin: 0 auto;
   background-color: #dedede;
   border-radius: 15px;
@@ -288,13 +287,19 @@ a {
   margin-bottom: 0.2rem;
 }
 
+.form-group label {
+  font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
 .form-label {
   max-width: 80%;
+  padding: 2rem 2rem;
 }
 
 input {
-  width: 80%;
-  padding: 0.5rem;
+  width: 90%;
   border: 1px solid #2d5d89;
   font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
   margin: auto;
@@ -310,7 +315,7 @@ input {
   cursor: pointer;
   font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 3rem 1rem 2rem 2rem;
+  margin: 3rem 1rem 4rem 2.5rem;
   padding: 0.5rem 1rem;
   margin-right: auto; /* Tilføj denne linje */
 
@@ -325,6 +330,7 @@ input {
   .form-grid {
     grid-template-columns: 1fr; /* Change to one column on smaller screens */
   }
+  
 }
 
 .p-signup {
