@@ -6,6 +6,12 @@ body {
   margin-bottom: 0;
 }
 
+.infobanner {
+  background-color: #6cc3c3;
+  color: white;
+  text-align: center;
+}
+
 #root {
   display: flex;
   flex-direction: column;
