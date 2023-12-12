@@ -25,7 +25,6 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
-                authContext.setAuthenticated(true);
                 nav('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
