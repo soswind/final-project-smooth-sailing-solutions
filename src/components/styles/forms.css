@@ -187,7 +187,7 @@ input {
 .tabs label {
   order: initial;
   display: flex;
-  padding: 2rem 2rem;
+  padding: 2rem 2.3rem;
   margin-right: 0.2rem;
   cursor: pointer;
   background: #dedede;
