@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { ProvideAuth } from './login';
+import { ProvideAuth } from './components/login';
 import { Routes, Route } from 'react-router-dom';
-import Login from './login'
+import Login from './components/login'
 import FindGaster from './FindGaster';
 import './App.css'
 import Header from './components/Header'

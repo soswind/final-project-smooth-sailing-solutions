@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './App.css'
 
 export const AuthContext = React.createContext();
 
@@ -16,7 +15,7 @@ function Login() {
 
         // Sender login dataen til vores backend
         try {
-            const response = await fetch('/api/login.php', {
+            const response = await fetch('./api/login.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +45,7 @@ function Login() {
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="input" />
             </label>
             <div className="remember">
-            <input type="checkbox" name="remember" id="remember" />
+            <input type="checkbox" className="login-checkbox" name="remember" id="remember" />
             <label htmlFor="remember">Remember me</label></div>
             <button type="submit" id="login-button" className="button">Login</button>
             <a href="http:/#"><button className="button button--white">New User</button></a>
