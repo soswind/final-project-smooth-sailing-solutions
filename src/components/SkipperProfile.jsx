@@ -4,11 +4,13 @@ import './SkipperProfile.css';
 
 function SkipperProfile() {
     return (
-        <>x
+        <>
 
             <div className="skipperprofile">
-                <p className="skipperName">Sailor John Johnsen</p>
-                <p className="profileType-skipper">&#40;Skipper&#41;</p>
+                <div className="skipperProfileHeader">
+                    <p className="skipperName">Sailor John Johnsen</p>
+                    <p className="profileType-skipper">&#40;Skipper&#41;</p>
+                </div>
 
                 <div className="skipperProfileInfo">
                     <img src="../src/images/skipperJohn.jpg" className='skipper-img'/>
@@ -21,8 +23,10 @@ function SkipperProfile() {
                         <p className="skipperAreaName">Jylland</p>
                     </div>
                 </div>
-                <button className="sendChat"> send chat</button>
-                <button className="requestNo"> request no.</button>
+                <div className="skipperProfileButton">
+                    <button className="sendChat"> send chat</button>
+                    <button className="requestNo"> request no.</button>
+                </div>
             </div>
 
             <div className="skipperCompleted">
