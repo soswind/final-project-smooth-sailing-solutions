@@ -19,7 +19,7 @@ function MobileMenu() {
       <nav className='mobile-nav'>
       <ul className="mobile-nav-links">
           <li><a href="/seafares.html">All Seafares</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="/info.html">Good To Know</a></li>
           <li><a href="/signup.html">Sign Up</a></li>
           <li className="mobile-login-button"><a href="/login.html">Login</a></li>

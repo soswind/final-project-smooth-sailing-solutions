@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className="desktop-nav">
             <ul className="nav-links">
                 <li><a href="/seafares.html">All Seafares</a></li>
-                <li><a href="/about.html">About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="/info.html">Good To Know</a></li>
                 <li><a href="/signup.html">Sign Up</a></li>
             </ul>

@@ -26,9 +26,9 @@ export default function NavbarBottom() {
                 <div className="footer-links">
                     <ul>
                         <h3>Important links</h3>
-                        <li><a href="/">Create Profile</a></li>
-                        <li><a href="/">Login</a></li>
-                        <li><a href="/">All seafares</a></li>
+                        <li><a href="/signup.html">Create Profile</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                        <li><a href="/seafares.html">All seafares</a></li>
                     </ul>
                 </div>
             </div>
