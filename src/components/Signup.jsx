@@ -272,7 +272,6 @@ export default function SignUpForm() {
         </label>
         <div className="tab">
           
-          
           <div className="signup-form">
           <form onSubmit={handleSubmit} className="form-grid">
               
