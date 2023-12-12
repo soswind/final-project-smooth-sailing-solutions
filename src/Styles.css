@@ -4,6 +4,7 @@
 @import url("./components/styles/seafares.css");
 @import url("./components/styles/forms.css");
 @import url("./components/styles/info.css");
+@import url("./components/styles/dashboard.css");
 
 * {
   margin: 0;
