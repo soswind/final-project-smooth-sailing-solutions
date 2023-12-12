@@ -5,10 +5,12 @@ function GastProfile() {
     return (
         <>
         <div className="gastProfile">
-            <p className="gastName">Pernille Pernillesen</p>
-            <p className="profileType">&#40;gast&#41;</p>
-            <p className="gastRating">Rating:</p> <img src="../src/images/rating-stars.png" className="ratingStars"/>
-            <a href="#" className="seeReviews">&#40;see reviews&#41;</a>
+            <div className="gastProfileHeader">
+                <p className="gastName">Pernille Pernillesen</p>
+                <p className="profileType">&#40;gast&#41;</p>
+                <p className="gastRating">Rating:</p> <img src="../src/images/rating-stars.png" className="ratingStars"/>
+                <a href="#" className="seeReviews">&#40;see reviews&#41;</a>
+            </div>
 
             <div className="gastProfileInfo">
                 <img src="../src/images/gastImage.jpg" className="gast-img"></img>
@@ -19,8 +21,10 @@ function GastProfile() {
                     <p className="gastArea2">Aarhus</p>
                 </div>
             </div>
-            <button className="sendChat"> send chat</button>
-            <button className="requestNo"> request no.</button>
+            <div className="gastProfileButton">
+                <button className="sendChat"> send chat</button>
+                <button className="requestNo"> request no.</button>
+            </div>
         </div>
 
         <div className="gastAboutMe">
