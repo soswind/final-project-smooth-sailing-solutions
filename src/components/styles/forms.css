@@ -190,6 +190,8 @@ a {
   text-align: center;
   padding-top: 2rem;
   max-width: 7rem;
+  max-height: 1.5rem;
+
 }
 
 .tabtwo {
@@ -199,6 +201,8 @@ a {
   text-align: center;
   padding: 2rem;
   max-width: 7rem;
+  max-height: 1.5rem;
+  
 }
 
 
@@ -206,6 +210,7 @@ a {
   order: initial;
   display: flex;
   padding: 2rem 1rem;
+  margin-right: 0.2rem;
   cursor: pointer;
   background: #dedede;
   font-weight: bold;
