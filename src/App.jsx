@@ -5,7 +5,7 @@ import Login from './components/login'
 import FindGaster from './FindGaster';
 import './App.css'
 import Header from './components/Header'
-import Economy from './economy'
+import Economy from './components/economy'
 import PrivateRoute from './components/Authenticator';
 import CaptainDashboard from './CaptainDashboard';
 import Seafares from './components/Seafares';
