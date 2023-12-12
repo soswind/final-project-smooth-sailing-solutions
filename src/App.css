@@ -83,6 +83,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 .footer-container a {
   text-decoration: none;
@@ -94,8 +95,7 @@ p {
 
 .footer-img {
   width: 172px;
-  position: relative;
-  left: 95%;
+  margin-left: 200px;
 }
 
 .footer-bottom {
@@ -110,21 +110,21 @@ p {
     height: 400px;
   }
   .footer-img {
-    left: 0;
     margin: 30px auto;
   }
 }
 @media only screen and (max-width: 750px) {
   .footer-container {
-    height: 700px;
+    height: 500px;
   }
   .footer-text {
     flex-direction: column;
-    text-align: center;
-    width: auto;
+    text-align: left;
+    width: 350px;
   }
   .footer-img {
     width: 130px;
+    margin-left: 0px;
   }
 }
 
