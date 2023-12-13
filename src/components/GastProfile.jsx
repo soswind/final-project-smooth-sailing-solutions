@@ -1,5 +1,7 @@
 import React from "react";
 import GastProfile from "./GastProfile";
+import gastImage from '../images/gastimage.jpg'
+import ratingStars from '../images/rating-stars.png'
 
 function GastProfile() {
     return (
@@ -8,12 +10,12 @@ function GastProfile() {
             <div className="gastProfileHeader">
                 <p className="gastName">Pernille Pernillesen</p>
                 <p className="profileType">&#40;gast&#41;</p>
-                <p className="gastRating">Rating:</p> <img src="../src/images/rating-stars.png" className="ratingStars"/>
+                <p className="gastRating">Rating:</p> <img src={ratingStars} className="ratingStars"/>
                 <a href="#" className="seeReviews">&#40;see reviews&#41;</a>
             </div>
 
             <div className="gastProfileInfo">
-                <img src="../src/images/gastImage.jpg" className="gast-img"></img>
+                <img src={gastImage} className="gast-img"></img>
                 <div className="gastProfileText">
                     <p className="gastAge">Age</p>
                     <p className="gastAge2">45 years</p>

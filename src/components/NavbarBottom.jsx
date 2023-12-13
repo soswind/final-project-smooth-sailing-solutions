@@ -1,10 +1,11 @@
 import React from 'react';
+import footerimage from '../images/hvid-sailmore-logo.svg'
 
 export default function NavbarBottom() {
     return (
         <><div className="footer-container">
             <div className="footer-logo">
-                <img src="../src/images/hvid-sailmore-logo.svg" className="footer-img"></img>
+                <img src={footerimage} className="footer-img"></img>
             </div>
             <div className="footer-text">
                 <div className="footer-info">

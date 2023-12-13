@@ -1,5 +1,8 @@
 import React from "react"
 import Accordion from "./Accordion";
+import BoatImage from "../images/boat.png"
+import fordaek from "../images/fordaek-bog.png"
+import sectionimage from "../images/section-image.png"
 
 
 export default function Landingpage() {
@@ -7,7 +10,7 @@ export default function Landingpage() {
         <>
         <section className="landingpage">
             <section className="crewprofiles">
-            <img className="boat-image" src="../src/images/boat.png"></img>
+            <img className="boat-image" src={BoatImage}></img>
             <div><h2>Create a free profile, and put together the perfect crew for your seafare</h2>
             <p className="land-paragraph">With a free captain profile at SailMore, you'll gain access to our crew exchange, where you get
                 an easy and clear overview, letting you find both new and experienced crew members, that match your
@@ -21,7 +24,7 @@ export default function Landingpage() {
             <a className="button-link" href="/findcrew.hmtl"><button className="crew-profiles-button" type="button">Browse crew profiles</button></a></div>
             </section>
            <section className="captainprofiles">
-            <img className="fordaek-image" src="../src/images/fordaek-bog.png"></img>
+            <img className="fordaek-image" src={fordaek}></img>
             <div><h2>Set the sail for far-away coasts with experienced captains!</h2>
             <p>Are you dreaming about crossing the Atlantic Sea, stepping upon deserted islands in Polynesia, or maybe just enjoy a quiet sunset at Kattegat?
                 Do you want to experience the world in a social, shared-economy and ecological way of travel? Become a crew through SailMore!
@@ -36,7 +39,7 @@ export default function Landingpage() {
             </section>
             </section>
             <div className="section-image">
-            <img className="section-landingpage" src="../src/images/section-image.png"></img>
+            <img className="section-landingpage" src={sectionimage}></img>
             <div className="content-container">
             <h2 className="h2-in-image">Guide to long-distance sailing and other seafares!</h2>
             <p className="paragraph-in-image">Before you set of on a cruise, it's a good idea to long-distance sailing. Whether you are used to acting as a guest or a captain on a sailboat or not, it is good
