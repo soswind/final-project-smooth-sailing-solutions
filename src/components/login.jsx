@@ -25,7 +25,7 @@ function Login() {
 
             if (response.ok) {
                 console.log("Login successful");
-                nav('/dashboard.html'); // Check react router documentation for correct function (It's not navigate)
+                nav('/dashboard'); // Check react router documentation for correct function (It's not navigate)
             } else {
                 console.error("Error with login");
             }
