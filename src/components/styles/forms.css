@@ -209,14 +209,14 @@ a {
 .tabs label {
   order: initial;
   display: flex;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #dedede;
   font-weight: bold;
   transition: background ease 0.2s;
   font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   color: #000;
+  background-color: #dedede;
 }
 
 .tabs .tab {
@@ -225,7 +225,6 @@ a {
   width: 100%;
   display: none;
   padding: 2rem;
-  background: #fff;
 }
 
 .checkbox {
@@ -239,21 +238,26 @@ a {
   margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
-.checkbox-label {
-  font-family: "Open Sans", sans-serif; /* Specify the font family as needed */
+.checkbox .checkbox-label {
+  width: auto;
+  
+  
 }
 
 .tabs input[type="radio"] {
   display: none;
+  
 }
 
 .tabs input[type="radio"]:checked + label {
   background: #f3f3f3;
   border: 1px solid #2d5d89;
+  
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
+  
 }
 
 @media (max-width: 45em) {
@@ -267,6 +271,10 @@ a {
     margin-right: 0;
   }
 
+  .checkbox .checkbox-label {
+    width: 100%; 
+  
+}
 }
 
 .signup-form {
@@ -294,7 +302,7 @@ a {
 
 .form-group label {
   font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   font-size: 1rem;
 }
 
@@ -311,7 +319,7 @@ input {
   background-color: white;
 }
 
-.signup-button {
+.signup-button{
   display: block;
   background-color: #f88c50;
   color: #fff;
@@ -320,8 +328,8 @@ input {
   cursor: pointer;
   font-family: "Archivo Narrow", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 3rem 1rem 4rem 2.5rem;
-  padding: 0.5rem 1rem;
+  margin: 4rem 1rem 1rem 2.5rem;
+  padding: 0.5rem 0.5rem;
   margin-right: auto; /* Tilføj denne linje */
 
   &:hover {
