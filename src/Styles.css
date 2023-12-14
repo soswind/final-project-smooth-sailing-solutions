@@ -5,6 +5,7 @@
 @import url("./components/styles/forms.css");
 @import url("./components/styles/info.css");
 @import url("./components/styles/dashboard.css");
+@import url("./components/styles/GastProfile.css");
 
 * {
   margin: 0;

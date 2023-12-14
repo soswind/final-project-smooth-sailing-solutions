@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Profile from './components/Profile';
+import find_gast_image from '../src/images/GAST_pexels.jpeg';
 
 export default function FindGaster() {
   const [data, setData] = useState([]);
@@ -23,7 +24,7 @@ export default function FindGaster() {
 
   return (
     <div>
-      <img className="find-gast-image" src="../src/images/GAST_pexels.jpeg" alt="Find Gast Image" />
+      <img className="find-gast-image" src={find_gast_image} alt="Find Gast Image" />
       <h1 className="h1-on-find-gast">Find Gaster</h1>
       <p className="p-on-find-gast">
         Here you can see all the Gasts who are seeking a captain. You can contact them

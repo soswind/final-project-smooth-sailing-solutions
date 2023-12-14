@@ -1,5 +1,4 @@
 import React from "react";
-import GastProfile from "./GastProfile";
 import gastImage from '../images/gastimage.jpg'
 import ratingStars from '../images/rating-stars.png'
 

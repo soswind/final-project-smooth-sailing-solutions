@@ -17,7 +17,7 @@ export default function CaptainDashboard(props) {
                 Messages</div>
                 <div><button className="dashboard_option"><img src={seafare_requests} /></button>
                 Seafare Requests</div>
-                <div><button className="dashboard_option"><img src={find_crew} /></button>
+                <div><a href="/crew"><button className="dashboard_option"><img src={find_crew} /></button></a>
                 Find Crew</div>
                 <div><button className="dashboard_option"><img src={update_seafares} /></button>
                 Update Seafares</div>
@@ -32,7 +32,7 @@ export default function CaptainDashboard(props) {
             <section id="dashboardSeafares">
                 <h4>Upcoming seafares</h4>
                 <DashboardSeafares />
-                <h5 className="viewmore">View More</h5>
+                <a className="button-link seafare-button" href="/createseafare">Create New Seafare</a>
             </section>
             </div>
         </section>

@@ -6,7 +6,7 @@ if (!$mySQL) {
     die('Database connection error: ' . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM crew_profile_full";
+$query = "SELECT * FROM crew";
 $result = mysqli_query($mySQL, $query);
 
 if (!$result) {

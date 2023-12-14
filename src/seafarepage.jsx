@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <InfoBanner />
     <Header />
-    <a className="button-link seafare-button" href="/createseafare.html">Create New Seafare</a>
     <Seafares />
     <NavbarBottom />
     </BrowserRouter>
