@@ -21,7 +21,7 @@ export default function Landingpage() {
                 <li>Explore the crew profiles, and make your own choice of exactly who fits your wishes and requirements for the cruises.</li>
                 <li>Give the crew a serious overview of scopes and activities on your cruises.</li>
             </ul>
-            <a className="button-link" href="/findcrew.hmtl"><button className="crew-profiles-button" type="button">Browse crew profiles</button></a></div>
+            <a className="button-link" href="/signup"><button className="crew-profiles-button" type="button">Sign up now</button></a></div>
             </section>
            <section className="captainprofiles">
             <img className="fordaek-image" src={fordaek}></img>
@@ -35,7 +35,7 @@ export default function Landingpage() {
                 <li>Get sailing experience and personal development experiences, that you'll never forget.</li>
                 <li>There's room for everyone - Whether you are an experienced sailor, or a complete land-dweller.</li>
             </ul>
-            <button className="captain-button" type="button">Browse captains profiles</button></div>
+            <a href="/seafares"><button className="captain-button" type="button">Browse Seafares</button></a></div>
             </section>
             </section>
             <div className="section-image">
